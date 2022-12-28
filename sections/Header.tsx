@@ -7,9 +7,12 @@ import FlagNl from "../public/flags/nl.svg"
 import FlagEn from "../public/flags/en.svg"
 import Link from "next/link";
 import {useRouter} from 'next/router'
+import {useTranslation} from "next-i18next";
 
 
 const Header = () => {
+    const {t} = useTranslation('')
+
     const dark = "dark";
     const light = "light";
     const router = useRouter();
@@ -121,22 +124,17 @@ const Header = () => {
                                 <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                                     <li className="text-white">
                                         <Link href="/">
-                                            Home
+                                            {t('navigation:home')}
                                         </Link>
                                     </li>
                                     <li className="text-white">
-                                        <Link href="/blogs">
-                                            Blogs
-                                        </Link>
-                                    </li>
-                                    <li className="text-white">
-                                        <Link href="/about">
-                                            About US
+                                        <Link href="/customers">
+                                            {t('navigation:customers')}
                                         </Link>
                                     </li>
                                     <li className="text-white">
                                         <Link href="/contact">
-                                            Contact US
+                                            {t('navigation:contact')}
                                         </Link>
                                     </li>
                                 </ul>

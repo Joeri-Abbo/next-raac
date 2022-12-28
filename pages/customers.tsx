@@ -2,10 +2,12 @@ import Layout from "../sections/Layout";
 import {serverSideTranslations} from 'next-i18next/serverSideTranslations';
 import {GetServerSideProps} from "next";
 import Head from "../sections/Head";
-import ContactForm from "../components/ContactForm";
-import Col2 from "../components/Col2";
+import CustomersRows from "../components/Customers";
+import {useTranslation} from "next-i18next";
 
-export default function Contact() {
+export default function Customers() {
+    const { t } = useTranslation('')
+
     return (
         <>
             <Layout>
@@ -14,14 +16,8 @@ export default function Contact() {
                     <meta name="description" content="Een pad van UX developer naar Devops en Cloud engineer"/>
                 </Head>
                 <main className="">
-                    <Col2>
-                        <div>
-                            TEst
-                        </div>
-                        <div>
-                            <ContactForm/>
-                        </div>
-                    </Col2>
+                    TITLE
+                    <CustomersRows/>
                 </main>
             </Layout>
         </>
@@ -35,6 +31,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async ({
     props: {
         ...(await serverSideTranslations(locale ?? 'en', [
             'footer',
+            'customers',
             'common'
         ])),
     },

@@ -3,14 +3,20 @@ import {useTheme} from "next-themes";
 import {useState, useEffect} from "react";
 import SunIcon from "../public/icons/sun-bright-solid.svg"
 import MoonIcon from "../public/icons/moon-solid.svg"
+import FlagNl from "../public/flags/nl.svg"
+import FlagEn from "../public/flags/en.svg"
 import Link from "next/link";
+import {useRouter} from 'next/router'
 
 
 const Header = () => {
-
     const dark = "dark";
     const light = "light";
+    const router = useRouter();
+    const {locale} = router
+
     const [mounted, setMounted] = useState(false);
+    const [navbar, setNavbar] = useState(false);
     const {systemTheme, theme, setTheme} = useTheme();
 
     useEffect(() => {
@@ -35,8 +41,26 @@ const Header = () => {
             )
         }
     };
-    const [navbar, setNavbar] = useState(false);
+    const renderLangChanger = () => {
+        if (!mounted) return null;
 
+        const classNames = " w-5 h-6 hover:scale-125 transform-gpu "
+
+        if (locale === "nl") {
+            return (
+                <FlagEn className={classNames} role="button" onClick={() => onToggleLanguageClick("en")}/>
+            )
+        } else {
+            return (
+                <FlagNl className={classNames} role="button" onClick={() => onToggleLanguageClick("nl")}/>
+            )
+        }
+    };
+
+    const onToggleLanguageClick = (newLocale: string) => {
+        const {pathname, asPath, query} = router;
+        router.push({pathname, query}, router.asPath, {locale: newLocale});
+    };
 
     return (
         <header>
@@ -82,6 +106,7 @@ const Header = () => {
                                         )}
                                     </button>
                                     {renderThemeChanger()}
+                                    {renderLangChanger()}
                                 </div>
                             </div>
                         </div>
@@ -116,6 +141,7 @@ const Header = () => {
                                     </li>
                                 </ul>
                                 {renderThemeChanger()}
+                                {renderLangChanger()}
                             </div>
                         </div>
                     </div>

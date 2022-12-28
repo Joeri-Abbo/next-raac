@@ -3,7 +3,7 @@ import {serverSideTranslations} from 'next-i18next/serverSideTranslations';
 import {GetServerSideProps} from "next";
 import Head from "../sections/Head";
 
-export default function Home() {
+export default function Contact() {
     return (
         <>
             <Layout>
@@ -13,7 +13,7 @@ export default function Home() {
                 </Head>
                 <main className="">
                     <h1 className="text-3xl font-bold underline">
-                        Hello world!
+                        Contact
                     </h1>
                 </main>
             </Layout>

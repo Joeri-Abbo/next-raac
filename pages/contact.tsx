@@ -5,6 +5,7 @@ import Head from "../sections/Head";
 import ContactForm from "../components/ContactForm";
 import Col2 from "../components/Col2";
 import Main from "../sections/Main";
+import Map from "../components/Map";
 
 export default function Contact() {
     return (
@@ -24,6 +25,7 @@ export default function Contact() {
                         </div>
                     </Col2>
                 </Main>
+                <Map/>
             </Layout>
         </>
     )

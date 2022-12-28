@@ -7,7 +7,7 @@ const Footer = () => {
     const { t } = useTranslation('')
 
     return (
-        <footer className="px-4 sm:px-6 py-6 mt-24 relative">
+        <footer className="px-4 sm:px-6 py-6 relative">
             <Link href="/#top" className="absolute">
                 <ArrowUp className="w-8 h-8 fill-blue-500 dark:fill-white" role="button"/>
             </Link>

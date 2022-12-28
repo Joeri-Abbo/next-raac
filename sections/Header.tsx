@@ -31,7 +31,7 @@ const Header = () => {
         if (!mounted) return null;
 
         const currentTheme = theme === "system" ? systemTheme : theme;
-        const classNames = " w-5 h-6 hover:scale-125 transform-gpu "
+        const classNames = " w-6 h-6 hover:scale-125 transform-gpu "
         const colorClass = currentTheme === dark ? "fill-yellow-500" : "fill-gray-900"
 
         if (currentTheme === dark) {
@@ -47,7 +47,7 @@ const Header = () => {
     const renderLangChanger = () => {
         if (!mounted) return null;
 
-        const classNames = " w-5 h-6 hover:scale-125 transform-gpu "
+        const classNames = " w-6 h-6 hover:scale-125 transform-gpu "
 
         if (locale === "nl") {
             return (
@@ -67,7 +67,7 @@ const Header = () => {
 
     return (
         <header>
-            <nav className="w-full bg-gray-800 shadow">
+            <nav className="w-full bg-white dark:bg-black shadow">
                 <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                     <div>
                         <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -81,7 +81,7 @@ const Header = () => {
                                         {navbar ? (
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
-                                                className="w-6 h-6 text-white"
+                                                className="w-6 h-6 dark:text-white text-black"
                                                 viewBox="0 0 20 20"
                                                 fill="currentColor"
                                             >
@@ -94,7 +94,7 @@ const Header = () => {
                                         ) : (
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
-                                                className="w-6 h-6 text-white"
+                                                className="w-6 h-6 dark:text-white text-black"
                                                 fill="none"
                                                 viewBox="0 0 24 24"
                                                 stroke="currentColor"
@@ -108,8 +108,10 @@ const Header = () => {
                                             </svg>
                                         )}
                                     </button>
-                                    {renderThemeChanger()}
-                                    {renderLangChanger()}
+                                    <div className="flex ml-1 gap-3 my-2">
+                                        {renderThemeChanger()}
+                                        {renderLangChanger()}
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -122,24 +124,28 @@ const Header = () => {
                         >
                             <div className="flex">
                                 <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                                    <li className="text-white">
+                                    <li className="dark:text-white text-black">
                                         <Link href="/">
                                             {t('navigation:home')}
                                         </Link>
                                     </li>
-                                    <li className="text-white">
+                                    <li className="dark:text-white text-black">
                                         <Link href="/customers">
                                             {t('navigation:customers')}
                                         </Link>
                                     </li>
-                                    <li className="text-white">
+                                    <li className="dark:text-white text-black">
                                         <Link href="/contact">
                                             {t('navigation:contact')}
                                         </Link>
                                     </li>
                                 </ul>
-                                {renderThemeChanger()}
-                                {renderLangChanger()}
+                                <div className="md:block hidden">
+                                    <div className="flex ml-6 gap-3">
+                                        {renderThemeChanger()}
+                                        {renderLangChanger()}
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

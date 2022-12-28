@@ -4,6 +4,7 @@ import {GetServerSideProps} from "next";
 import Head from "../sections/Head";
 import ContactForm from "../components/ContactForm";
 import Col2 from "../components/Col2";
+import Main from "../sections/Main";
 
 export default function Contact() {
     return (
@@ -13,7 +14,7 @@ export default function Contact() {
                     <title>Home | Joeri Abbo</title>
                     <meta name="description" content="Een pad van UX developer naar Devops en Cloud engineer"/>
                 </Head>
-                <main className="">
+                <Main>
                     <Col2>
                         <div>
                             TEst
@@ -22,7 +23,7 @@ export default function Contact() {
                             <ContactForm/>
                         </div>
                     </Col2>
-                </main>
+                </Main>
             </Layout>
         </>
     )

@@ -5,10 +5,11 @@ import SunIcon from "../public/icons/sun-bright-solid.svg"
 import MoonIcon from "../public/icons/moon-solid.svg"
 import FlagNl from "../public/flags/nl.svg"
 import FlagEn from "../public/flags/en.svg"
-import Link from "next/link";
+import Bars from "../public/icons/bars-solid.svg"
 import {useRouter} from 'next/router'
 import {useTranslation} from "next-i18next";
-
+import LinkItem from "../components/navigation/LinkItem";
+import Dropdown from "../components/navigation/Dropdown";
 
 const Header = () => {
     const {t} = useTranslation('')
@@ -79,33 +80,9 @@ const Header = () => {
                                         onClick={() => setNavbar(!navbar)}
                                     >
                                         {navbar ? (
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                className="w-6 h-6 dark:text-white text-black"
-                                                viewBox="0 0 20 20"
-                                                fill="currentColor"
-                                            >
-                                                <path
-                                                    fillRule="evenodd"
-                                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                                    clipRule="evenodd"
-                                                />
-                                            </svg>
+                                            <Bars className="w-6 h-6 fill-black dark:fill-white" role="button"/>
                                         ) : (
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                className="w-6 h-6 dark:text-white text-black"
-                                                fill="none"
-                                                viewBox="0 0 24 24"
-                                                stroke="currentColor"
-                                                strokeWidth={2}
-                                            >
-                                                <path
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                    d="M4 6h16M4 12h16M4 18h16"
-                                                />
-                                            </svg>
+                                            <Bars className="w-6 h-6 fill-black dark:fill-white" role="button"/>
                                         )}
                                     </button>
                                     <div className="flex ml-1 gap-3 my-2">
@@ -123,24 +100,36 @@ const Header = () => {
                             }`}
                         >
                             <div className="flex">
-                                <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                                    <li className="dark:text-white text-black">
-                                        <Link href="/">
-                                            {t('navigation:home')}
-                                        </Link>
-                                    </li>
-                                    <li className="dark:text-white text-black">
-                                        <Link href="/customers">
-                                            {t('navigation:customers')}
-                                        </Link>
-                                    </li>
-                                    <li className="dark:text-white text-black">
-                                        <Link href="/contact">
-                                            {t('navigation:contact')}
-                                        </Link>
-                                    </li>
+                                <ul className="items-center justify-center space-y-2 md:flex md:space-x-6 md:space-y-0">
+                                    <LinkItem href="/">
+                                        {t('navigation:home')}
+                                    </LinkItem>
+                                    <Dropdown title="navigation:customers" href="#" subitems={[
+                                        {
+                                            "href": "customers1",
+                                            "title": "navigation:contact1"
+                                        },
+                                        {
+                                            "title": "navigation:contact2",
+                                            "href": "customers2"
+                                        },
+                                        {
+                                            "title": "navigation:contact3",
+                                            "href": "customers3"
+                                        },
+                                        {
+                                            "title": "navigation:contact4",
+                                            "href": "customers4 "
+                                        }
+                                    ]}/>
+                                    <LinkItem href="/customers">
+                                        {t('navigation:customers')}
+                                    </LinkItem>
+                                    <LinkItem href="/contact">
+                                        {t('navigation:contact')}
+                                    </LinkItem>
                                 </ul>
-                                <div className="md:block hidden">
+                                <div className="md:block hidden my-6">
                                     <div className="flex ml-6 gap-3">
                                         {renderThemeChanger()}
                                         {renderLangChanger()}
@@ -151,7 +140,9 @@ const Header = () => {
                     </div>
                 </div>
             </nav>
+
         </header>
+
     );
 };
 

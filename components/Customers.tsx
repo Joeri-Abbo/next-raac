@@ -10,7 +10,6 @@ const Customers = () => {
     const [customers, setCustomers] = useState({});
     const [loading, setLoading] = useState(false);
     useEffect(() => {
-        // TODO fix this to only load onces
         if (!loading) {
             setLoading(true)
             fetch("/data/customers.json", {

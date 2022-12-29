@@ -23,7 +23,7 @@ const Customers = () => {
                     setCustomers(data)
                 })
         }
-    }, [customers]);
+    }, [customers, loading]);
     return (
         <Col4>
             {/*@ts-ignore*/}

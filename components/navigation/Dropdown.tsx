@@ -11,7 +11,7 @@ type LinkItemType = {
 type Props = {
     title: any,
     href: string,
-    subitems?: [LinkItemType]
+    subitems?: LinkItemType[]
 }
 const Dropdown = (props: Props) => {
     const {t} = useTranslation('')

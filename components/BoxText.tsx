@@ -1,11 +1,11 @@
 type Props = {
     children: JSX.Element[] | JSX.Element | string
 };
-const Col2 = (props: Props) => {
+const BoxText = (props: Props) => {
     return (
-        <div className="grid grid-cols-1 gap-4 mt-4 lg:grid-cols-2">
+        <div className="text-black dark:text-white">
             {props.children}
         </div>
     )
 }
-export default Col2;
+export default BoxText;

@@ -104,22 +104,31 @@ const Header = () => {
                                     <LinkItem href="/">
                                         {t('navigation:home')}
                                     </LinkItem>
-                                    <Dropdown title="navigation:customers" href="#" subitems={[
+                                    <Dropdown title="navigation:managementsysteem" href="/managementsysteem" subitems={[
                                         {
-                                            "href": "customers1",
-                                            "title": "navigation:contact1"
+                                            "href": "/iso9001",
+                                            "title": "navigation:iso9001"
                                         },
                                         {
-                                            "title": "navigation:contact2",
-                                            "href": "customers2"
+                                            "title": "navigation:as9100-as9110-as9120",
+                                            "href": "as9100-as9110-as9120"
+                                        }
+                                    ]}/>
+                                    <LinkItem href="/nadcap">
+                                        {t('navigation:nadcap')}
+                                    </LinkItem>
+                                    <Dropdown title="navigation:interim-management" href="/interim-management" subitems={[
+                                        {
+                                            "href": "/audit",
+                                            "title": "navigation:audit"
                                         },
                                         {
-                                            "title": "navigation:contact3",
-                                            "href": "customers3"
+                                            "title": "navigation:training",
+                                            "href": "training"
                                         },
                                         {
-                                            "title": "navigation:contact4",
-                                            "href": "customers4 "
+                                            "title": "navigation:root-cause-analyse",
+                                            "href": "root-cause-analyse"
                                         }
                                     ]}/>
                                     <LinkItem href="/customers">

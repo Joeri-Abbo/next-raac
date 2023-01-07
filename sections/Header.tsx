@@ -1,70 +1,16 @@
-import Logo from "../components/Logo";
-import {useTheme} from "next-themes";
+import Logo from "../components/Sections/Header/Logo";
 import {useState, useEffect} from "react";
-import SunIcon from "../public/icons/sun-bright-solid.svg"
-import MoonIcon from "../public/icons/moon-solid.svg"
-import FlagNl from "../public/flags/nl.svg"
-import FlagEn from "../public/flags/en.svg"
 import Bars from "../public/icons/bars-solid.svg"
-import {useRouter} from 'next/router'
-import {useTranslation} from "next-i18next";
+import {useTranslation} from "react-i18next";
 import LinkItem from "../components/navigation/LinkItem";
 import Dropdown from "../components/navigation/Dropdown";
+import ThemeSwitcher from "../components/Sections/Header/ThemeSwitcher";
+import LanguageSwitcher from "../components/Sections/Header/LanguageSwitcher";
 
 const Header = () => {
     const {t} = useTranslation('')
-
-    const dark = "dark";
-    const light = "light";
-    const router = useRouter();
-    const {locale} = router
-
-    const [mounted, setMounted] = useState(false);
     const [navbar, setNavbar] = useState(false);
-    const {systemTheme, theme, setTheme} = useTheme();
 
-    useEffect(() => {
-        setMounted(true);
-    }, [])
-
-
-    const renderThemeChanger = () => {
-        if (!mounted) return null;
-
-        const currentTheme = theme === "system" ? systemTheme : theme;
-        const classNames = " w-6 h-6 hover:scale-125 transform-gpu "
-        const colorClass = currentTheme === dark ? "fill-yellow-500" : "fill-gray-900"
-
-        if (currentTheme === dark) {
-            return (
-                <SunIcon className={classNames + colorClass} role="button" onClick={() => setTheme(light)}/>
-            )
-        } else {
-            return (
-                <MoonIcon className={classNames + colorClass} role="button" onClick={() => setTheme(dark)}/>
-            )
-        }
-    };
-    const renderLangChanger = () => {
-        if (!mounted) return null;
-
-        const classNames = " w-6 h-6 hover:scale-125 transform-gpu "
-
-        if (locale === "nl") {
-            return (
-                <FlagEn className={classNames} role="button" onClick={() => onToggleLanguageClick("en")}/>
-            )
-        } else {
-            return (
-                <FlagNl className={classNames} role="button" onClick={() => onToggleLanguageClick("nl")}/>
-            )
-        }
-    };
-
-    const onToggleLanguageClick = (newLocale: string) => {
-        const {pathname, asPath, query} = router;
-        router.push({pathname, query}, router.asPath, {locale: newLocale});
-    };
 
     return (
         <header>
@@ -86,8 +32,8 @@ const Header = () => {
                                         )}
                                     </button>
                                     <div className="flex ml-1 gap-3 my-2">
-                                        {renderThemeChanger()}
-                                        {renderLangChanger()}
+                                        <ThemeSwitcher/>
+                                        <LanguageSwitcher/>
                                     </div>
                                 </div>
                             </div>
@@ -117,20 +63,21 @@ const Header = () => {
                                     <LinkItem href="/nadcap">
                                         {t('navigation:nadcap')}
                                     </LinkItem>
-                                    <Dropdown title="navigation:interim-management" href="/interim-management" subitems={[
-                                        {
-                                            "href": "/audit",
-                                            "title": "navigation:audit"
-                                        },
-                                        {
-                                            "title": "navigation:training",
-                                            "href": "training"
-                                        },
-                                        {
-                                            "title": "navigation:root-cause-analyse",
-                                            "href": "root-cause-analyse"
-                                        }
-                                    ]}/>
+                                    <Dropdown title="navigation:interim-management" href="/interim-management"
+                                              subitems={[
+                                                  {
+                                                      "href": "/audit",
+                                                      "title": "navigation:audit"
+                                                  },
+                                                  {
+                                                      "title": "navigation:training",
+                                                      "href": "training"
+                                                  },
+                                                  {
+                                                      "title": "navigation:root-cause-analyse",
+                                                      "href": "root-cause-analyse"
+                                                  }
+                                              ]}/>
                                     <LinkItem href="/customers">
                                         {t('navigation:customers')}
                                     </LinkItem>
@@ -140,8 +87,8 @@ const Header = () => {
                                 </ul>
                                 <div className="md:block hidden my-6">
                                     <div className="flex ml-6 gap-3">
-                                        {renderThemeChanger()}
-                                        {renderLangChanger()}
+                                        <ThemeSwitcher/>
+                                        <LanguageSwitcher/>
                                     </div>
                                 </div>
                             </div>

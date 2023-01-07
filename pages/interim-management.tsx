@@ -1,9 +1,6 @@
 import Layout from "../sections/Layout";
-import {serverSideTranslations} from 'next-i18next/serverSideTranslations';
-import {GetServerSideProps} from "next";
 import Head from "../sections/Head";
-import CustomersRows from "../components/Customers";
-import {useTranslation} from "next-i18next";
+import {useTranslation} from "react-i18next";
 import Panorama from "../components/Panorama";
 import Main from "../sections/Main";
 import Title from "../components/Title";
@@ -47,25 +44,28 @@ export default function Customers() {
                                 </BoxText>
                             </Box>
 
-                           <div className="mt-4">
-                               <Box>
-                                   <BoxTitle>
-                                       Begeleiden van externe audits
-                                   </BoxTitle>
-                                   <BoxText>
-                                       Hierbij kunt u ook denken aan het begeleiden van externe audits, het uitvoeren van
-                                       de
-                                       interne audits, het houden van de management reviews en of het begeleiden en trainen
-                                       van
-                                       uw personeel.
+                            <div className="mt-4">
+                                <Box>
+                                    <BoxTitle>
+                                        Begeleiden van externe audits
+                                    </BoxTitle>
+                                    <BoxText>
+                                        Hierbij kunt u ook denken aan het begeleiden van externe audits, het uitvoeren
+                                        van
+                                        de
+                                        interne audits, het houden van de management reviews en of het begeleiden en
+                                        trainen
+                                        van
+                                        uw personeel.
 
-                                       Er is altijd een passende oplossing voor u organisatie mogelijk.
-                                   </BoxText>
-                               </Box>
-                           </div>
+                                        Er is altijd een passende oplossing voor u organisatie mogelijk.
+                                    </BoxText>
+                                </Box>
+                            </div>
                         </div>
                         <Box>
-                            <Image src="https://source.unsplash.com/random/900%C3%97700/?firework" alt="TEST" width="1760"
+                            <Image src="https://source.unsplash.com/random/900%C3%97700/?firework" alt="TEST"
+                                   width="1760"
                                    height="1760" className="h-"/>
                         </Box>
                     </Col2>
@@ -74,17 +74,3 @@ export default function Customers() {
         </>
     )
 }
-
-// @ts-ignore
-export const getServerSideProps: GetServerSideProps<Props> = async ({
-                                                                        locale,
-                                                                    }) => ({
-    props: {
-        ...(await serverSideTranslations(locale ?? 'en', [
-            'footer',
-            'navigation',
-            'interim-management',
-            'common'
-        ])),
-    },
-})

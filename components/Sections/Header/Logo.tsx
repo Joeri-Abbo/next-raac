@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Globe from "../public/layouts/globe.svg"
-import Text from "../public/layouts/text.svg"
+import Globe from "../../../public/layouts/globe.svg"
+import Text from "../../../public/layouts/text.svg"
 
 const Logo = () => {
     return (

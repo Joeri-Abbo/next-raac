@@ -1,27 +1,33 @@
 import {Button, Carousel} from "flowbite-react";
+import {useId} from "react";
+import Image from "next/image";
+import Slide from "./Slide";
 
-type Slide = {
+type SlideData = {
     href?: string
     image: string
 }
 type Props = {
-    slides: Slide[]
+    slides: SlideData[]
 }
 const Slider = (props: Props) => {
     const items = [...Array(1)] // using spread syntax (produces the same as above)
 
+    // @ts-ignore
     return (
         <>
             <div className="
             h-100 sm:h-64 xl:h-80 2xl:h-96
             ">
                 <Carousel className="border-none">
-                    {items.map(item =>
-                        <div className="relative w-full h-full">
-                            <img
+                    {items.map((item, index) =>
+                        <Slide key={index}>
+                            <Image
                                 className="w-full w-full border-none"
                                 src={"https://placeimg.com/177/300/" + item}
                                 alt="..."
+                                width={177}
+                                height={300}
                             />
                             <div className="absolute top-20 left-20 z-10">
                                 Title
@@ -29,7 +35,7 @@ const Slider = (props: Props) => {
                             <Button className="absolute bottom-20 left-20 z-10">
                                 test
                             </Button>
-                        </div>
+                        </Slide>
                     )}
                 </Carousel>
             </div>

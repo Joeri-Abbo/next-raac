@@ -1,6 +1,4 @@
 import Layout from "../sections/Layout";
-import {serverSideTranslations} from 'next-i18next/serverSideTranslations';
-import {GetServerSideProps} from "next";
 import Head from "../sections/Head";
 import Main from "../sections/Main";
 import Slider from "../components/Slider";
@@ -23,16 +21,3 @@ export default function Home() {
         </>
     )
 }
-
-// @ts-ignore
-export const getServerSideProps: GetServerSideProps<Props> = async ({
-                                                                        locale,
-                                                                    }) => ({
-    props: {
-        ...(await serverSideTranslations(locale ?? 'en', [
-            'footer',
-            'navigation',
-            'common'
-        ])),
-    },
-})

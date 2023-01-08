@@ -3,7 +3,7 @@ type Props = {
 };
 const BoxTitle = (props: Props) => {
     return (
-        <div className="text-black dark:text-white text-xl mb-2">
+        <div className="dark:text-white mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
             {props.children}
         </div>
     )

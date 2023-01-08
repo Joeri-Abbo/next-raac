@@ -18,8 +18,9 @@ export default function Customers() {
             <Layout>
 
                 <Head>
-                    <title>Home | Joeri Abbo</title>
-                    <meta name="description" content="Een pad van UX developer naar Devops en Cloud engineer"/>
+                    <title>Contact | Joeri Abbo</title>
+                    <meta name="description"
+                          content="Meer weten over NADCAP, ISO9001 audit of onze andere diensten. Neemt u contact op met RAAC"/>
                 </Head>
                 <Panorama image="/panorama/header-image-9.jpg" alt="panorama"/>
                 <Title>
@@ -64,7 +65,7 @@ export default function Customers() {
                             </div>
                         </div>
                         <Box>
-                            <Image src="https://source.unsplash.com/random/900%C3%97700/?firework" alt="TEST"
+                            <Image src="/content/management.png" alt="TEST"
                                    width="1760"
                                    height="1760" className="h-"/>
                         </Box>

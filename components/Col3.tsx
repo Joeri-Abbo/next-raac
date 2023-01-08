@@ -1,6 +1,5 @@
 type Props = {
     children: JSX.Element[] | JSX.Element | string
-
 };
 const Col3 = (props: Props) => {
     return (

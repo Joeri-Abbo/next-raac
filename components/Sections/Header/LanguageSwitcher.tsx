@@ -12,7 +12,6 @@ function LanguageSwitcher() {
         i18n.changeLanguage(language);
     }, [language, i18n]);
 
-
     const renderLangChanger = () => {
 
         const classNames = "w-6 h-6 hover:scale-125 transform-gpu"
@@ -32,7 +31,6 @@ function LanguageSwitcher() {
         i18n.changeLanguage(newLocale).then(r => setLanguage(newLocale));
         setLanguage(newLocale);
     };
-
 
     return (
         <div>

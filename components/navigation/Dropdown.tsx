@@ -3,7 +3,6 @@ import {useRouter} from 'next/router'
 import {useTranslation} from "react-i18next";
 import Chevron from "../../public/icons/chevron-down-solid.svg";
 
-
 type LinkItemType = {
     title: string,
     href: string,

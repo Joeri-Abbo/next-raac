@@ -2,14 +2,18 @@ import Layout from "../sections/Layout";
 import Head from "../sections/Head";
 import Main from "../sections/Main";
 import Slider from "../components/Slider";
+import {useTranslation} from "react-i18next";
 
 export default function Home() {
+    const {t} = useTranslation('home')
+
     return (
         <>
             <Layout>
                 <Head>
-                    <title>Home | Joeri Abbo</title>
-                    <meta name="description" content="Een pad van UX developer naar Devops en Cloud engineer"/>
+                    <title> {t('seo.title') ?? ""}</title>
+                    <meta name="description"
+                          content={t('seo.description') ?? ""}/>
                 </Head>
                 <Slider slides={[]}/>
                 <Main>

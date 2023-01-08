@@ -1,5 +1,13 @@
 {
   "home": "Home",
   "customers": "Klanten",
-  "contact": "Contact"
+  "contact": "Contact",
+  "interim-management": "Interim management",
+  "audit": "Audit",
+  "training": "Training",
+  "root-cause-analyse": "Root cause analyse",
+  "nadcap": "Nadcap",
+  "managementsysteem": "Management system",
+  "iso9001": "ISO9001",
+  "as9100-as9110-as9120": "AS9100 AS9110 AS9120"
 }

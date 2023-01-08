@@ -21,6 +21,9 @@ i18n
                 footer: require('../locales/en/footer.json'),
                 navigation: require('../locales/en/navigation.json'),
                 page404: require('../locales/en/page404.json'),
+                interimmanagement: require('../locales/en/interimmanagement.json'),
+                contact: require('../locales/en/contact.json'),
+                home: require('../locales/en/home.json'),
             },
             nl: {
                 common: require('../locales/nl/common.json'),
@@ -28,7 +31,9 @@ i18n
                 footer: require('../locales/nl/footer.json'),
                 navigation: require('../locales/nl/navigation.json'),
                 page404: require('../locales/nl/page404.json'),
-
+                interimmanagement: require('../locales/nl/interimmanagement.json'),
+                contact: require('../locales/nl/contact.json'),
+                home: require('../locales/nl/home.json'),
             },
         },
         lng: 'en', // default language

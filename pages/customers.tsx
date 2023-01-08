@@ -1,5 +1,4 @@
 import Layout from "../sections/Layout";
-import {GetServerSideProps} from "next";
 import Head from "../sections/Head";
 import CustomersRows from "../components/Customers";
 import {useTranslation} from "react-i18next";
@@ -8,19 +7,20 @@ import Main from "../sections/Main";
 import Title from "../components/Title";
 
 export default function Customers() {
-    const {t} = useTranslation('')
+    const {t} = useTranslation('customers')
 
     return (
         <>
             <Layout>
 
                 <Head>
-                    <title>Home | Joeri Abbo</title>
-                    <meta name="description" content="Een pad van UX developer naar Devops en Cloud engineer"/>
+                    <title> {t('seo.title')}</title>
+                    <meta name="description"
+                          content={t('seo.description') ?? ""}/>
                 </Head>
                 <Panorama image="/panorama/header-image-9.jpg" alt="panorama"/>
                 <Title>
-                    {t('customers:title')}
+                    {t('title')}
                 </Title>
                 <Main>
                     <CustomersRows/>

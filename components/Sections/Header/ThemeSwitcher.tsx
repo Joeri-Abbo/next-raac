@@ -1,7 +1,5 @@
 import {useState, useEffect} from 'react';
-import {useTranslation, withTranslation} from 'react-i18next';
-import FlagNl from "../../../public/flags/nl.svg"
-import FlagEn from "../../../public/flags/en.svg"
+import {withTranslation} from 'react-i18next';
 import {useTheme} from "next-themes";
 import SunIcon from "../../../public/icons/sun-bright-solid.svg";
 import MoonIcon from "../../../public/icons/moon-solid.svg";

@@ -8,5 +8,9 @@
   "np2": "Nieuwstraten Metaalbewerking:\nQHS coördinator",
   "senior": "Technical advisor\nNadcap processes NDT, HT, EDM and WLD",
   "standardaero": "GAP analyse AS9110\n",
-  "title": "Klanten"
+  "title": "Klanten",
+  "seo": {
+    "title": "Klanten | RAAC",
+    "description": "RAAC werkt voor u en uw systemen, Auditor ISO9001 As9100, AS9100 advies en implementatie"
+  }
 }

@@ -16,17 +16,17 @@ type Props = {
 const Dropdown = (props: Props) => {
     const {t} = useTranslation('')
     const {asPath} = useRouter()
-    let activeClass = asPath == props.href ? " text-gray-500" : "";
+    let activeClass = asPath == props.href ? " text-blue-500" : "";
     return (
         <li className="dark:text-white text-black">
             {/* START DESKTOP DROPDOWN*/}
             <div className="relative group md:block hidden">
                 <a href={props.href}
-                   className="flex flex-row items-center w-full px-4 py-4 md:w-auto md:inline md:mt-0 md:ml-4 focus:outline-none hover:text-gray-500 ">
+                   className="flex flex-row items-center w-full px-4 py-4 md:w-auto md:inline md:mt-0 md:ml-4 focus:outline-none hover:text-blue-500 ">
                     <span className={activeClass + " flex items-center gap-1"}>
                         {t(props.title)}
                         <Chevron
-                            className={activeClass + "w-4 h-4 fill-black dark:fill-white group-hover:text-gray-500  group-hover:rotate-90 transform-gpu"}
+                            className={activeClass + "w-4 h-4 fill-black dark:fill-white group-hover:fill-blue-500  group-hover:rotate-90 transform-gpu"}
                             role="button"/>
                     </span>
                 </a>

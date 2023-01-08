@@ -7,9 +7,9 @@ type Props = {
 }
 const LinkItem = (props: Props) => {
     const {asPath} = useRouter()
-    let activeClass = asPath == props.href ? " text-gray-500" : "";
+    let activeClass = asPath == props.href ? " text-blue-500" : "";
     return (
-        <li className={"dark:text-white text-black hover:text-gray-500" + activeClass}>
+        <li className={"dark:text-white text-black hover:text-blue-500 dark:hover:text-blue-500" + activeClass}>
             <Link href={props.href}>
                 {props.children}
             </Link>

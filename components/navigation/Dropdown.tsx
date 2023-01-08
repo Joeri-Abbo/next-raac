@@ -32,7 +32,7 @@ const Dropdown = (props: Props) => {
                 </a>
                 <div className="absolute z-10 hidden bg-grey-200 group-hover:block">
 
-                    <div className="px-2 pt-2 pb-4 bg-white shadow-lg w-64 rounded-b-lg">
+                    <div className="px-2 pt-2 pb-4 bg-white dark:bg-black shadow-lg w-64 rounded-b-lg">
                         <ul>
                             {props.subitems && Object.keys(props.subitems).length > 0 && props.subitems.map((item: LinkItemType) => (
                                 <LinkItem key={item.title} href={item.href}>

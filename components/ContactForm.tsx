@@ -1,11 +1,14 @@
 import {useState} from "react";
 import BoxTitle from "./BoxTitle";
+import {useTranslation} from "react-i18next";
 
 const ContactForm = () => {
+    const {t} = useTranslation('contactform')
+
     const [contact, setContact] = useState({
         name: '',
         email: '',
-        subject: 'RAAC - Contact formulier',
+        subject: t("subject") ?? "",
         honeypot: '', // if any value received in this field, form submission will be ignored.
         message: '',
         replyTo: '@', // this will set replyTo of email to email address entered in the form
@@ -33,7 +36,7 @@ const ContactForm = () => {
             if (json.success) {
                 setResponse({
                     type: 'success',
-                    message: 'Thank you for reaching out to us.'
+                    message: t("message.success")
                 });
             } else {
                 setResponse({
@@ -45,7 +48,7 @@ const ContactForm = () => {
             console.log('An error occurred', e);
             setResponse({
                 type: 'error',
-                message: 'An error occured while submitting the form'
+                message: t("message.error")
             });
         }
     };
@@ -79,7 +82,7 @@ const ContactForm = () => {
                             >
                                 <div className='column content'>
                                     <BoxTitle>
-                                        Contact formulier
+                                        {t("title") ?? ""}
                                     </BoxTitle>
                                     <form
                                         action='https://api.staticforms.xyz/submit'
@@ -89,8 +92,9 @@ const ContactForm = () => {
                                     >
                                         <div className='field'>
                                             <label
-                                                className='block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300'>Your
-                                                Name</label>
+                                                className='block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300'>
+                                                {t("label.name") ?? ""}
+                                            </label>
                                             <input
                                                 className='shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light'
                                                 type='text'
@@ -102,8 +106,9 @@ const ContactForm = () => {
                                         </div>
                                         <div className='field'>
                                             <label
-                                                className='block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300'>Your
-                                                Email</label>
+                                                className='block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300'>
+                                                {t("label.email") ?? ""}
+                                            </label>
                                             <input
                                                 className='shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light'
                                                 type='email'
@@ -115,7 +120,9 @@ const ContactForm = () => {
                                         </div>
                                         <div className='field' style={{display: 'none'}}>
                                             <label
-                                                className='block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300'>Title</label>
+                                                className='block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300'>
+                                                {t("label.honeypot") ?? ""}
+                                            </label>
                                             <input
                                                 type='text'
                                                 name='honeypot'
@@ -130,7 +137,9 @@ const ContactForm = () => {
                                         </div>
                                         <div className='field'>
                                             <label
-                                                className='block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400'>Message</label>
+                                                className='block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400'>
+                                                {t("label.message") ?? ""}
+                                            </label>
                                             <div className='control'>
                                                 <textarea
                                                     rows={6}
@@ -146,7 +155,7 @@ const ContactForm = () => {
                                             <button
                                                 className='py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-700 sm:w-fit hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'
                                                 type='submit'>
-                                                Submit
+                                                {t("submit") ?? ""}
                                             </button>
                                         </div>
                                     </form>

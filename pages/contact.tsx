@@ -22,12 +22,11 @@ export default function Contact() {
                     <Col2>
                         <Box>
                             <BoxTitle>
-                                Contact gegevens
+                                {t('title') ?? ""}
                             </BoxTitle>
                             <BoxText>
                                 <p>
-                                    Voor extra informatie kunt u ons bellen, mailen of maak gebruik van het contact
-                                    formulier.
+                                    {t('text') ?? ""}
 
 
                                     <span className={"block mt-8 font-bold"}>

@@ -23,6 +23,7 @@ i18n
                 page404: require('../locales/en/page404.json'),
                 interimmanagement: require('../locales/en/interimmanagement.json'),
                 contact: require('../locales/en/contact.json'),
+                contactform: require('../locales/en/contactform.json'),
                 home: require('../locales/en/home.json'),
             },
             nl: {
@@ -33,6 +34,7 @@ i18n
                 page404: require('../locales/nl/page404.json'),
                 interimmanagement: require('../locales/nl/interimmanagement.json'),
                 contact: require('../locales/nl/contact.json'),
+                contactform: require('../locales/nl/contactform.json'),
                 home: require('../locales/nl/home.json'),
             },
         },

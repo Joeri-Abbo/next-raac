@@ -52,12 +52,12 @@ const Header = () => {
                                     </LinkItem>
                                     <Dropdown title="navigation:managementsysteem" href="/managementsysteem" subitems={[
                                         {
-                                            "href": "/iso9001",
-                                            "title": "navigation:iso9001"
+                                            "title": "navigation:iso9001",
+                                            "href": "/managementsysteem/iso9001"
                                         },
                                         {
                                             "title": "navigation:as9100-as9110-as9120",
-                                            "href": "as9100-as9110-as9120"
+                                            "href": "/managementsysteem/as9100-as9110-as9120"
                                         }
                                     ]}/>
                                     <LinkItem href="/nadcap">
@@ -66,16 +66,16 @@ const Header = () => {
                                     <Dropdown title="navigation:interim-management" href="/interim-management"
                                               subitems={[
                                                   {
-                                                      "href": "/audit",
+                                                      "href": "/interim-management/audit",
                                                       "title": "navigation:audit"
                                                   },
                                                   {
                                                       "title": "navigation:training",
-                                                      "href": "training"
+                                                      "href": "/interim-management/training"
                                                   },
                                                   {
                                                       "title": "navigation:root-cause-analyse",
-                                                      "href": "root-cause-analyse"
+                                                      "href": "/interim-management/root-cause-analyse"
                                                   }
                                               ]}/>
                                     <LinkItem href="/customers">

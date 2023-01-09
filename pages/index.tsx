@@ -7,13 +7,16 @@ import {useTranslation} from "react-i18next";
 export default function Home() {
     const {t} = useTranslation('home')
 
+    const seo_title = `${t('seo.title')}`;
+    const seo_description = `${t('seo.description')}`;
+
     return (
         <>
             <Layout>
                 <Head>
-                    <title> {t('seo.title') ?? ""}</title>
+                    <title> {seo_title}</title>
                     <meta name="description"
-                          content={t('seo.description') ?? ""}/>
+                          content={seo_description}/>
                 </Head>
                 <Slider slides={[]}/>
                 <Main>

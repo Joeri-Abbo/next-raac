@@ -8,15 +8,16 @@ import Title from "../components/Title";
 
 export default function Customers() {
     const {t} = useTranslation('customers')
+    const seo_title = `${t('seo.title')}`;
+    const seo_description = `${t('seo.description')}`;
 
     return (
         <>
             <Layout>
-
                 <Head>
-                    <title> {t('seo.title')}</title>
+                    <title> {seo_title}</title>
                     <meta name="description"
-                          content={t('seo.description') ?? ""}/>
+                          content={seo_description}/>
                 </Head>
                 <Panorama image="/panorama/header-image-9.jpg" alt="panorama"/>
                 <Title>

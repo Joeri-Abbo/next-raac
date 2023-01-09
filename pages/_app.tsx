@@ -26,6 +26,7 @@ i18n
                 contactform: require('../locales/en/contactform.json'),
                 home: require('../locales/en/home.json'),
                 audit: require('../locales/en/audit.json'),
+                training: require('../locales/en/training.json'),
             },
             nl: {
                 common: require('../locales/nl/common.json'),
@@ -38,6 +39,7 @@ i18n
                 contactform: require('../locales/nl/contactform.json'),
                 home: require('../locales/nl/home.json'),
                 audit: require('../locales/nl/audit.json'),
+                training: require('../locales/nl/training.json'),
             },
         },
         lng: 'en', // default language

@@ -12,17 +12,11 @@ import {useTranslation} from "react-i18next";
 
 export default function Contact() {
     const {t} = useTranslation('contact')
-    const seo_title = `${t('seo.title')}`;
-    const seo_description = `${t('seo.description')}`;
 
     return (
         <>
             <Layout>
-                <Head>
-                    <title> {seo_title}</title>
-                    <meta name="description"
-                          content={seo_description}/>
-                </Head>
+                <Head title={t('seo.title') ?? ""} description={t('seo.description') ?? ""}/>
                 <Panorama image="/panorama/header-image-10.jpg" alt="panorama"/>
                 <Main>
                     <Col2>

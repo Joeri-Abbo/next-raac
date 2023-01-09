@@ -13,11 +13,7 @@ export default function Index() {
     return (
         <>
             <Layout>
-                <Head>
-                    <title> {t('seo.title')}</title>
-                    <meta name="description"
-                          content={t('seo.description') ?? ""}/>
-                </Head>
+                <Head title={t('seo.title') ?? ""} description={t('seo.description') ?? ""}/>
                 <Panorama image="/panorama/header-image-9.jpg" alt="panorama" title={t('title') ?? ""}/>
                 <Main>
                     <Col2>

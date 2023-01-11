@@ -1,7 +1,6 @@
 import BoxTitle from "./BoxTitle";
 import Box from "./Box";
 import BoxText from "./BoxText";
-import {ReactElement, JSXElementConstructor, ReactFragment, ReactPortal, ReactNode} from "react";
 
 type Props = {
     title: JSX.Element[] | JSX.Element | string

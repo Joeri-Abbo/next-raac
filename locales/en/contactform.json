@@ -7,9 +7,9 @@
   "title": "Contact formulier",
   "label": {
     "name": "Your name",
-    "email": "Je email",
+    "email": "Your email",
     "honeypot": "Leave this field empty",
     "message": "Message"
   },
-  "submit": "Verstuur"
+  "submit": "Send"
 }

@@ -28,6 +28,8 @@ i18n
                 home: require('../locales/en/home.json'),
                 audit: require('../locales/en/audit.json'),
                 training: require('../locales/en/training.json'),
+                nadcap: require('../locales/en/nadcap.json'),
+                iso9001: require('../locales/en/iso9001.json'),
             },
             nl: {
                 common: require('../locales/nl/common.json'),
@@ -42,6 +44,8 @@ i18n
                 home: require('../locales/nl/home.json'),
                 audit: require('../locales/nl/audit.json'),
                 training: require('../locales/nl/training.json'),
+                nadcap: require('../locales/nl/nadcap.json'),
+                iso9001: require('../locales/nl/iso9001.json'),
             },
         },
         lng: 'en', // default language

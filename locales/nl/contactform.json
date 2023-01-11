@@ -8,8 +8,8 @@
   "label": {
     "name": "Je naam",
     "email": "Je email",
-    "honeypot": "Leave this field empty",
-    "message": "Message"
+    "honeypot": "Laat dit veld leeg",
+    "message": "Bericht"
   },
   "submit": "Verstuur"
 }

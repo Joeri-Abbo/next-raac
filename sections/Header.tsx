@@ -50,7 +50,7 @@ const Header = () => {
                                     <LinkItem href="/">
                                         {t('navigation:home')}
                                     </LinkItem>
-                                    <Dropdown title="navigation:managementsysteem" href="/managementsysteem" subitems={[
+                                    <Dropdown title="navigation:managementsysteem" href="#" subitems={[
                                         {
                                             "title": "navigation:iso9001",
                                             "href": "/managementsysteem/iso9001"

@@ -30,6 +30,7 @@ i18n
                 training: require('../locales/en/training.json'),
                 nadcap: require('../locales/en/nadcap.json'),
                 iso9001: require('../locales/en/iso9001.json'),
+                as9100as9110as9120: require('../locales/en/as9100as9110as9120.json'),
             },
             nl: {
                 common: require('../locales/nl/common.json'),
@@ -46,6 +47,7 @@ i18n
                 training: require('../locales/nl/training.json'),
                 nadcap: require('../locales/nl/nadcap.json'),
                 iso9001: require('../locales/nl/iso9001.json'),
+                as9100as9110as9120: require('../locales/nl/as9100as9110as9120.json'),
             },
         },
         lng: 'en', // default language

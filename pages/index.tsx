@@ -11,10 +11,47 @@ export default function Home() {
         <>
             <Layout>
                 <Head title={t('seo.title') ?? ""} description={t('seo.description') ?? ""}/>
-                <Slider slides={[]}/>
+                <Slider slides={[
+                    {
+                        button: {
+                            label: "test",
+                            href: "https://www.google.com",
+                        },
+                        title: "title",
+                        text: "Text",
+                        image: "/slider/home-slider-1.jpg"
+                    },
+                    {
+                        button: {
+                            label: "test",
+                            href: "https://www.google.com",
+                        },
+                        title: "title",
+                        text: "Text",
+                        image: "/slider/home-slider-2.jpg"
+                    },
+                    {
+                        button: {
+                            label: "test",
+                            href: "https://www.google.com",
+                        },
+                        title: "title",
+                        text: "Text",
+                        image: "/slider/home-slider-3.jpg"
+                    },
+                    {
+                        button: {
+                            label: "test",
+                            href: "https://www.google.com",
+                        },
+                        title: "title",
+                        text: "Text",
+                        image: "/slider/home-slider-4.jpg"
+                    }
+                ]}/>
                 <Main>
-                    <h1 className="text-3xl font-bold underline">
-                        Hello world!
+                    <h1>
+                        teawts
                     </h1>
                 </Main>
             </Layout>

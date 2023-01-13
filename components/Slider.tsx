@@ -42,6 +42,9 @@ const Slider = (props: Props) => {
                             <Button className="absolute bottom-20 left-20 z-10" href={item.button?.href}>
                                 {item.button?.label}
                             </Button>
+                            <Button className="absolute bottom-20 left-20 z-10" href={item.button?.href}>
+                                {item.button?.label}
+                            </Button>
                         </Slide>
                     )}
                 </Carousel>

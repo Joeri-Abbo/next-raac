@@ -81,7 +81,6 @@ export default function Home() {
 
                             </p>
                         </CTA>
-
                     </Col3>
                 </Main>
             </Layout>

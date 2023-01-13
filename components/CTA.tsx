@@ -20,9 +20,9 @@ const CTA = (props: Props) => {
                     {props.title}
                 </h3>
             </div>
-            <p className="py-3 text-black text-center">
+            <div className="py-3 text-black text-center">
                 {props.children}
-            </p>
+            </div>
             {props.button && (
                 <Button className="" href={props.button?.href}>
                     {props.button?.label}

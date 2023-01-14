@@ -32,10 +32,10 @@ const Slider = (props: Props) => {
                                 width={1920}
                                 height={1000}
                             />
-                            <div className="absolute top-20 left-20 z-10">
+                            <div className="absolute top-20 left-20 z-10 drop-shadow">
                                 {item.title}
                             </div>
-                            <div className="absolute top-40 left-20 z-10">
+                            <div className="absolute top-40 left-20 z-10 drop-shadow">
                                 {item.text}
                             </div>
 

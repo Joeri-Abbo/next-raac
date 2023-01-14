@@ -53,32 +53,34 @@ export default function Home() {
                 ]}/>
                 <Main>
                     <Col3>
-                        <CTA image={"/content/1.png"} title={"test"} button={
+                        <CTA image={"/content/1.png"} title={t('cta.1.title') ?? ""} button={
                             {
-                                "href": "test",
-                                "label": "Lees verder",
+                                "href": "/managementsysteem/iso9001",
+                                "label": t('cta.1.label') ?? "",
                             }
                         }>
                             <p>
-                                Opzetten / onderhouden van een kwaliteitsmanagementsysteem volgens ISO9001, ISO14001, OHSAS18001.
+                                {t('cta.1.text') ?? ""}
                             </p>
                         </CTA>
-                        <CTA image={"/content/2.png"} title={"test"} button={
+                        <CTA image={"/content/2.png"} title={t('cta.2.title') ?? ""} button={
                             {
-                                "href": "test",
-                                "label": "Lees verder",
+                                "href": "managementsysteem/as9100-as9110-as9120",
+                                "label": t('cta.2.label') ?? "",
                             }
                         }>
-                            <p>Luchtvaart Kwaliteitmanagement systemen volgens AS9100/9110/9120 EASA-Part21, Part 145</p>
+                            <p>
+                                {t('cta.2.text') ?? ""}
+                            </p>
                         </CTA>
-                        <CTA image={"/content/3.png"} title={"test"} button={
+                        <CTA image={"/content/3.png"} title={t('cta.3.title') ?? ""} button={
                             {
-                                "href": "test",
-                                "label": "Lees verder",
+                                "href": "/nadcap",
+                                "label": t('cta.3.label') ?? "",
                             }
                         }>
-                            <p>Nadcap productie processen volgens de checklisten van PRI, NDT, WLD, HT, EDM
-
+                            <p>
+                                {t('cta.3.text') ?? ""}
                             </p>
                         </CTA>
                     </Col3>

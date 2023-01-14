@@ -14,7 +14,9 @@ const BoxContent = (props: Props) => {
                 {props.title}
             </BoxTitle>
             <BoxText>
-                {props.text}
+               <p>
+                   {props.text}
+               </p>
             </BoxText>
             {props.items ? (
                 <ul className="list-disc list-inside dark:text-white text-black mt-4">

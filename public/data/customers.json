@@ -34,5 +34,13 @@
   {
     "image": "/clients/standardaero.png",
     "title": "standardaero"
+  },
+  {
+    "image": "/clients/bureau-veritas.svg",
+    "title": "bureau-veritas-belgium"
+  },
+  {
+    "image": "/clients/bureau-veritas.svg",
+    "title": "bureau-veritas-france"
   }
 ]

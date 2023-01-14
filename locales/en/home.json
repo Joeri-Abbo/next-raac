@@ -1,5 +1,17 @@
 {
+  "intro": {
+    "toptitle": "FUNDAMENTALS IN THE MINDSET OF RAAC\n",
+    "title": "Quality, reliability and creativity\n",
+    "subtitle": "The organization RAAC was launched end 2012. The first weeks the focus was executing AS9100 and ISO9001 audit for the certification body Lloyds register on a freelance basis.\n\n",
+    "text": "After several weeks, the request for consultancy was increasing, therefore we also consultancy was launched. At the moment, there is a good mix between consultancy and auditing.\n\n"
+  },
+  "buttons": {
+    "1": "Root cause analysis",
+    "2": "Contact",
+    "3": "INTERIM MANAGEMENT"
+  },
   "cta": {
+    "title": "RAAC CONSULTANCY ACTIVITIES\n",
     "1": {
       "label": "Read more",
       "text": "Establish / maintain a quality management system according to ISO9001, ISO14001 and OHSAS18001\n\n",

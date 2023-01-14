@@ -5,6 +5,8 @@ import Slider from "../components/Slider";
 import {useTranslation} from "react-i18next";
 import Col3 from "../components/Col3";
 import CTA from "../components/CTA";
+import {Button} from "flowbite-react";
+import Title from "../components/Title";
 
 export default function Home() {
     const {t} = useTranslation('home')
@@ -52,6 +54,39 @@ export default function Home() {
                     }
                 ]}/>
                 <Main>
+
+                        <div className="text-center max-w-lg m-auto text-black dark:text-white">
+                            <p>
+                                {t('intro.toptitle') ?? ""}
+                            </p>
+                            <p>
+                                {t('intro.title') ?? ""}
+                            </p>
+                            <p>
+                                {t('intro.subtitle') ?? ""}
+                            </p>
+                            <p>
+                                {t('intro.text') ?? ""}
+                            </p>
+                        </div>
+
+                    <div className="container mx-auto px-6">
+                        <Col3>
+                            <Button className="" href={""}>
+                                {t('buttons.1') ?? ""}
+                            </Button>
+                            <Button className="" href={""}>
+                                {t('buttons.2') ?? ""}
+                            </Button>
+                            <Button className="" href={""}>
+                                {t('buttons.3') ?? ""}
+                            </Button>
+                        </Col3>
+                    </div>
+
+                    <Title>
+                        {t('cta.title')}
+                    </Title>
                     <Col3>
                         <CTA image={"/content/1.png"} title={t('cta.1.title') ?? ""} button={
                             {

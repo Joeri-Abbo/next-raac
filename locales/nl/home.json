@@ -1,5 +1,17 @@
 {
+  "intro": {
+    "toptitle": "SPEERPUNTEN IN DE WERKWIJZE VAN RAAC",
+    "title": "Kwaliteit, betrouwbaarheid en creativiteit",
+    "subtitle": "RAAC is in 2012 gestart. In de eerste weken lag de focus op het uitvoeren van AS9100 en ISO9001 audit voor de firma Lloyds op freelance basis.\n",
+    "text": "Echter na een aantal weken werd de vraag voor consultancy groter en groter, waardoor dit ook opgestart werd. Op dit moment is er een goede mix tussen consultancy werk en het uitvoeren van AS9100 en ISO9001 audits.\n"
+  },
+  "buttons": {
+    "1": "Root cause analysis",
+    "2": "NEEM CONTACT OP",
+    "3": "INTERIM MANAGEMENT"
+  },
   "cta": {
+    "title": "RAAC CONSULTANCY BESTAAT UIT\n",
     "1": {
       "label": "Lees verder",
       "text": "Opzetten / onderhouden van een kwaliteitsmanagementsysteem volgens ISO9001, ISO14001, OHSAS18001.\n\n",

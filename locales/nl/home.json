@@ -1,4 +1,21 @@
 {
+  "cta": {
+    "1": {
+      "label": "Lees verder",
+      "text": "Opzetten / onderhouden van een kwaliteitsmanagementsysteem volgens ISO9001, ISO14001, OHSAS18001.\n\n",
+      "title": "KWALITEITSMANAGEMENTSYSTEEM"
+    },
+    "2": {
+      "label": "Lees verder",
+      "text": "Luchtvaart Kwaliteitmanagement systemen volgens AS9100/9110/9120 EASA-Part21, Part 145\n\n",
+      "title": "LUCHTVAART KWALITEITMANAGEMENT\n"
+    },
+    "3": {
+      "label": "Lees verder",
+      "text": "Nadcap productie processen volgens de checklisten van PRI, NDT, WLD, HT, EDM\n\n",
+      "title": "NADCAP PRODUCTIE\n"
+    }
+  },
   "seo": {
     "title": "Home",
     "description": ""

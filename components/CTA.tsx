@@ -15,11 +15,11 @@ const CTA = (props: Props) => {
         <div className="p-6 bg-white rounded dark:bg-gray-900 dark:text-white">
             <div>
                 <Image src={props.image} alt={props.title} width="1760" height="250" className="w-full"/>
-                <h3 className="bg-gray-700 py-3 px-7 mt-1 text-center">
+                <h3 className="bg-gray-700 py-3 mt-1 text-center text-xs">
                     {props.title}
                 </h3>
             </div>
-            <div className="py-3 text-black text-center dark:text-white">
+            <div className="py-3 text-black text-center dark:text-white h-32">
                 {props.children}
             </div>
             {props.button && (

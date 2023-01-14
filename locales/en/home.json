@@ -1,4 +1,21 @@
 {
+  "cta": {
+    "1": {
+      "label": "Read more",
+      "text": "Establish / maintain a quality management system according to ISO9001, ISO14001 and OHSAS18001\n\n",
+      "title": "QUALITY MANAGEMENT SYSTEM\n"
+    },
+    "2": {
+      "label": "Read more",
+      "text": "Aviation quality management systems according AS9100/9110/9120 EASA Part-21, Part-145\n\n",
+      "title": "AVIATION QUALITY MANAGEMENT SYSTEMS\n"
+    },
+    "3": {
+      "label": "Read more",
+      "text": "Nadcap production processes according to the PRI checklists NDT, WLD, HT, and EDM\n\n",
+      "title": "NADCAP PRODUCTION\n"
+    }
+  },
   "seo": {
     "title": "Home",
     "description": ""

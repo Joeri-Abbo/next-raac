@@ -35,10 +35,10 @@ export default function Contact() {
                                 </p>
                                 <ul>
                                     <li>
-                                        Uniceflaan 44
+                                        Moriaanseweg oost 219
                                     </li>
                                     <li>
-                                        3223PA Hellevoetluis
+                                        3223AH Hellevoetluis
                                     </li>
                                     <li>
                                         Nederland

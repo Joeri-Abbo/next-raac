@@ -10,6 +10,36 @@
     "2": "NEEM CONTACT OP",
     "3": "INTERIM MANAGEMENT"
   },
+  "slides": {
+    "1": {
+      "title": "RAAC HELPT U BIJ HET OPZETTEN",
+      "text": "ISO9001 ISO14001, OHSAS18001",
+      "button": {
+        "label": "Lees meer"
+      }
+    },
+    "2": {
+      "title": "U WILT EEN GECERTIFICEERD MANAGEMENT SYSTEEM",
+      "text": "AS 9100/9110/9120.",
+      "button": {
+        "label": "Lees meer"
+      }
+    },
+    "3": {
+      "title": "MEER DAN 50 AUDITS",
+      "text": "SINDS 2006 DOOR RAAC",
+      "button": {
+        "label": "Lees meer"
+      }
+    },
+    "4": {
+      "title": "OVERAL WORDEN FOUTEN GEMAAKT",
+      "text": "ROOT CAUSE ANALYSE",
+      "button": {
+        "label": "Lees meer"
+      }
+    }
+  },
   "cta": {
     "title": "RAAC CONSULTANCY BESTAAT UIT\n",
     "1": {

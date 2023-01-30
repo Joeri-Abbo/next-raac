@@ -22,11 +22,11 @@ export default function Audit() {
                             title={t('box1.title') ?? ""}
                             text={t('box1.text') ?? ""}
                         />
+                        <BoxImage src={"/content/route-cause.png"} alt={"TEST"} width={1760} height={1760}/>
                         <BoxContent
                             title={t('box2.title') ?? ""}
                             text={t('box2.text') ?? ""}
                         />
-                        <BoxImage src={"/content/route-cause.png"} alt={"TEST"} width={1760} height={1760}/>
                         <BoxImage src={"/content/route-fish.png"} alt={"TEST"} width={1760} height={1760}/>
                     </Col2>
                 </Main>

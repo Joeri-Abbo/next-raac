@@ -3,7 +3,7 @@ type Props = {
 };
 const Col2 = (props: Props) => {
     return (
-        <div className="rounded p-6 dark:bg-gray-900">
+        <div className="rounded py-10 px-6 dark:bg-gray-900 m-auto">
             {props.children}
         </div>
     )

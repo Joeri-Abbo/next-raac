@@ -13,7 +13,6 @@ export default function Nadcap() {
     return (
         <>
             <Layout>
-
                 <Head title={t('seo.title') ?? ""} description={t('seo.description') ?? ""}/>
                 <Panorama image="/panorama/header-image-6.jpg" alt="panorama" title={t('title') ?? ""}/>
                 <Main>
@@ -22,11 +21,11 @@ export default function Nadcap() {
                             title={t('box1.title') ?? ""}
                             text={t('box1.text') ?? ""}
                         />
+                        <BoxImage src={"/content/nadcap.png"} alt={"TEST"} width={1760} height={1760}/>
                         <BoxContent
                             title={t('box2.title') ?? ""}
                             text={t('box2.text') ?? ""}
                         />
-                        <BoxImage src={"/content/nadcap.png"} alt={"TEST"} width={1760} height={1760}/>
                         <BoxImage src={"/content/nadcap-cer.png"} alt={"TEST"} width={1760} height={1760}/>
                     </Col2>
                 </Main>

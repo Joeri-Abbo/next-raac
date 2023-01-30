@@ -18,67 +18,67 @@ export default function Home() {
                 <Slider slides={[
                     {
                         button: {
-                            label: "test",
-                            href: "https://www.google.com",
+                            label: t('slides.1.button.label'),
+                            href: "managementsysteem/iso9001",
                         },
-                        title: "title",
-                        text: "Text",
+                        title: t('slides.1.title'),
+                        text: t('slides.1.text'),
                         image: "/slider/home-slider-1.jpg"
                     },
                     {
                         button: {
-                            label: "test",
-                            href: "https://www.google.com",
+                            label: t('slides.2.button.label'),
+                            href: "managementsysteem/as9100-as9110-as9120",
                         },
-                        title: "title",
-                        text: "Text",
+                        title: t('slides.2.title'),
+                        text: t('slides.2.text'),
                         image: "/slider/home-slider-2.jpg"
                     },
                     {
                         button: {
-                            label: "test",
-                            href: "https://www.google.com",
+                            label: t('slides.3.button.label'),
+                            href: "nadcap",
                         },
-                        title: "title",
-                        text: "Text",
+                        title: t('slides.3.title'),
+                        text: t('slides.3.text'),
                         image: "/slider/home-slider-3.jpg"
                     },
                     {
                         button: {
-                            label: "test",
-                            href: "https://www.google.com",
+                            label: t('slides.4.button.label'),
+                            href: "interim-management/root-cause-analyse",
                         },
-                        title: "title",
-                        text: "Text",
+                        title: t('slides.4.title'),
+                        text: t('slides.4.text'),
                         image: "/slider/home-slider-4.jpg"
                     }
                 ]}/>
                 <Main>
 
-                        <div className="text-center max-w-lg m-auto text-black dark:text-white">
-                            <p>
-                                {t('intro.toptitle') ?? ""}
-                            </p>
-                            <p>
-                                {t('intro.title') ?? ""}
-                            </p>
-                            <p>
-                                {t('intro.subtitle') ?? ""}
-                            </p>
-                            <p>
-                                {t('intro.text') ?? ""}
-                            </p>
-                        </div>
+                    <div className="text-center max-w-lg m-auto text-black dark:text-white">
+                        <p>
+                            {t('intro.toptitle') ?? ""}
+                        </p>
+                        <p>
+                            {t('intro.title') ?? ""}
+                        </p>
+                        <p>
+                            {t('intro.subtitle') ?? ""}
+                        </p>
+                        <p>
+                            {t('intro.text') ?? ""}
+                        </p>
+                    </div>
 
                     <div className="container mx-auto px-6">
                         <Col3>
-                            <Button className="" href={""}>
+                            <Button className="" href={"interim-management/root-cause-analyse"}>
                                 {t('buttons.1') ?? ""}
                             </Button>
-                            <Button className="" href={""}>
+                            <Button className="" href={"contact"}>
                                 {t('buttons.2') ?? ""}
                             </Button>
-                            <Button className="" href={""}>
+                            <Button className="" href={"interim-management"}>
                                 {t('buttons.3') ?? ""}
                             </Button>
                         </Col3>

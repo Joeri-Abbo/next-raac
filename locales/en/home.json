@@ -5,6 +5,36 @@
     "subtitle": "The organization RAAC was launched end 2012. The first weeks the focus was executing AS9100 and ISO9001 audit for the certification body Lloyds register on a freelance basis.\n\n",
     "text": "After several weeks, the request for consultancy was increasing, therefore we also consultancy was launched. At the moment, there is a good mix between consultancy and auditing.\n\n"
   },
+  "slides": {
+    "1": {
+      "title": "RAAC CAN ASSIST YOU IF YOU WANT A CERTIFIED MANAGEMENT SYSTEM",
+      "text": "ACCORDING TO ISO 9001, ISO14001 AND OHSAS18001",
+      "button": {
+        "label": "Read more"
+      }
+    },
+    "2": {
+      "title": "YOU WANT A CERTIFIED MANAGEMENT SYSTEM",
+      "text": "AS9100/AS9110/AS9120",
+      "button": {
+        "label": "Read more"
+      }
+    },
+    "3": {
+      "title": "MORE THEN 50 AUDITS",
+      "text": "SINDS 2005 BY RAAC",
+      "button": {
+        "label": "Read more"
+      }
+    },
+    "4": {
+      "title": "EVERYWHERE MISTAKES ARE MADE",
+      "text": "ROOT CAUSE ANALYSE",
+      "button": {
+        "label": "Read more"
+      }
+    }
+  },
   "buttons": {
     "1": "Root cause analysis",
     "2": "Contact",

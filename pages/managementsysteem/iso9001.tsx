@@ -27,11 +27,11 @@ export default function Iso9001() {
                                 t('box1.items.3') ?? "",
                             ]}
                         />
+                        <BoxImage src={"/content/1.png"} alt={"TEST"} width={1760} height={1760}/>
                         <BoxContent
                             title={t('box2.title') ?? ""}
                             text={t('box2.text') ?? ""}
                         />
-                        <BoxImage src={"/content/1.png"} alt={"TEST"} width={1760} height={1760}/>
                     </Col2>
                 </Main>
             </Layout>

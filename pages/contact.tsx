@@ -20,7 +20,7 @@ export default function Contact() {
                 <Panorama image="/panorama/header-image-10.jpg" alt="panorama"/>
                 <Main>
                     <Col2>
-                        <Box>
+                        <div className="rounded p-6 dark:bg-gray-900">
                             <BoxTitle>
                                 {t('title') ?? ""}
                             </BoxTitle>
@@ -56,10 +56,10 @@ export default function Contact() {
                                     </li>
                                 </ul>
                             </BoxText>
-                        </Box>
-                        <Box>
+                        </div>
+                        <div className="rounded p-6 dark:bg-gray-900 ">
                             <ContactForm/>
-                        </Box>
+                        </div>
                     </Col2>
                 </Main>
                 <Map/>

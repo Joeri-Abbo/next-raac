@@ -6,8 +6,9 @@
   },
   "title": "Contact formulier",
   "label": {
-    "name": "Your name",
-    "email": "Your email",
+    "name": "Name",
+    "email": "E-mail",
+    "phone": "Telephone Number",
     "honeypot": "Leave this field empty",
     "message": "Message"
   },

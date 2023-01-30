@@ -8,8 +8,8 @@ type ButtonData = {
 }
 type SlideData = {
     button?: ButtonData
-    title?: string
-    text?: string
+    title?: string | null
+    text?: string | null
     image: string
 
 }
@@ -22,7 +22,7 @@ const Slider = (props: Props) => {
             <div className="
             h-[500px]
             ">
-                <Carousel className="border-none">
+                <Carousel className="border-none" slideInterval={5000}>
                     {props.slides.map((item, index) =>
                         <Slide key={index}>
                             <Image

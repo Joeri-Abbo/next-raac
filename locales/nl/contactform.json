@@ -6,10 +6,10 @@
   },
   "title": "Contact formulier",
   "label": {
-    "name": "Je naam",
-    "email": "Je email",
+    "name": "Uw naam",
+    "email": "E-mail",
     "honeypot": "Laat dit veld leeg",
-    "message": "Bericht"
+    "message": "Uw Bericht"
   },
-  "submit": "Verstuur"
+  "submit": "Versturen"
 }

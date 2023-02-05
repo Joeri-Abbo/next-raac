@@ -1,15 +1,16 @@
 {
-  "subject": "RAAC - Contact formulier",
+  "subject": "RAAC - Contactformulier",
   "message": {
     "success": "Thank you for reaching out to us.",
     "error": "An error occured while submitting the form"
   },
-  "title": "Contact formulier",
+  "title": "Contactformulier",
   "label": {
-    "name": "Uw naam",
+    "name": "Naam",
     "email": "E-mail",
+    "phone": "Telefoonnummer",
     "honeypot": "Laat dit veld leeg",
-    "message": "Uw Bericht"
+    "message": "Bericht"
   },
   "submit": "Versturen"
 }

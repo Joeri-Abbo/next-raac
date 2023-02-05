@@ -35,7 +35,7 @@ export default function Contact() {
                                 </p>
                                 <ul>
                                     <li>
-                                        Moriaanseweg oost 219
+                                        Moriaanseweg Oost 219
                                     </li>
                                     <li>
                                         3223AH Hellevoetluis

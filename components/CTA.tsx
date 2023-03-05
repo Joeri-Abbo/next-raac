@@ -12,7 +12,7 @@ type Props = {
 }
 const CTA = (props: Props) => {
     return (
-        <div className="p-6 bg-white rounded dark:bg-gray-900 dark:text-white">
+        <div className="p-6 bg-white rounded dark:bg-gray-900 dark:text-white border-4 border-gray-300 rounded dark:border-gray-500 hover:scale-105 transition-all	">
             <div>
                 <Image src={props.image} alt={props.title} width="1760" height="250" className="w-full"/>
                 <h3 className="bg-gray-700 py-3 mt-1 text-center text-xs">

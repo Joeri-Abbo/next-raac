@@ -6,8 +6,8 @@ import {useTranslation} from "react-i18next";
 import Col3 from "../components/Col3";
 import CTA from "../components/CTA";
 import PrimaryButton from "../components/Button/Primary";
-import SecondaryButton from "../components/Button/Secondary";
 import Title from "../components/Title";
+import Spacer from "../components/Spacer";
 
 export default function Home() {
     const {t} = useTranslation('home')
@@ -88,6 +88,7 @@ export default function Home() {
                     <Title>
                         {t('cta.title')}
                     </Title>
+                    <Spacer/>
                     <Col3>
                         <CTA image={"/content/1.png"} title={t('cta.1.title') ?? ""} button={
                             {

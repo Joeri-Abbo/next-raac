@@ -5,7 +5,8 @@ import Slider from "../components/Slider";
 import {useTranslation} from "react-i18next";
 import Col3 from "../components/Col3";
 import CTA from "../components/CTA";
-import {Button} from "flowbite-react";
+import PrimaryButton from "../components/Button/Primary";
+import SecondaryButton from "../components/Button/Secondary";
 import Title from "../components/Title";
 
 export default function Home() {
@@ -72,15 +73,15 @@ export default function Home() {
 
                     <div className="container mx-auto px-6">
                         <Col3>
-                            <Button className="" href={"interim-management/root-cause-analyse"}>
+                            <PrimaryButton href={"interim-management/root-cause-analyse"}>
                                 {t('buttons.1') ?? ""}
-                            </Button>
-                            <Button className="" href={"contact"}>
+                            </PrimaryButton>
+                            <PrimaryButton href={"contact"}>
                                 {t('buttons.2') ?? ""}
-                            </Button>
-                            <Button className="" href={"interim-management"}>
+                            </PrimaryButton>
+                            <PrimaryButton href={"interim-management"}>
                                 {t('buttons.3') ?? ""}
-                            </Button>
+                            </PrimaryButton>
                         </Col3>
                     </div>
 

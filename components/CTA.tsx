@@ -1,5 +1,5 @@
-import {Button} from "flowbite-react";
 import Image from "next/image";
+import PrimaryButton from "../components/Button/Primary";
 
 type Props = {
     children: JSX.Element[] | JSX.Element | string | null
@@ -23,9 +23,9 @@ const CTA = (props: Props) => {
                 {props.children}
             </div>
             {props.button && (
-                <Button className="" href={props.button?.href}>
+                <PrimaryButton href={props.button?.href}>
                     {props.button?.label}
-                </Button>
+                </PrimaryButton>
             )}
         </div>
     )

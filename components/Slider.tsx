@@ -1,4 +1,6 @@
-import {Button, Carousel} from "flowbite-react";
+import {Carousel} from "flowbite-react";
+import PrimaryButton from "../components/Button/Primary";
+
 import Image from "next/image";
 import Slide from "./Slide";
 
@@ -39,12 +41,12 @@ const Slider = (props: Props) => {
                                 {item.text}
                             </div>
 
-                            <Button className="absolute bottom-20 left-20 z-10" href={item.button?.href}>
-                                {item.button?.label}
-                            </Button>
-                            <Button className="absolute bottom-20 left-20 z-10" href={item.button?.href}>
-                                {item.button?.label}
-                            </Button>
+                            <PrimaryButton className="absolute bottom-20 left-20 z-10" href={item.button?.href ?? ""}>
+                                {item.button?.label ?? ""}
+                            </PrimaryButton>
+                            <PrimaryButton className="absolute bottom-20 left-20 z-10" href={item.button?.href ?? ""}>
+                                {item.button?.label ?? ""}
+                            </PrimaryButton>
                         </Slide>
                     )}
                 </Carousel>

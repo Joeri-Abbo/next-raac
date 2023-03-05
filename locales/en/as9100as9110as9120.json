@@ -1,7 +1,7 @@
 {
   "title": "AS9100 /AS9110 / AS9120\n",
   "box1": {
-    "title": "Specifieke luchtvaart eisen\n",
+    "title": "Specific aviation requirements\n",
     "text": "This is an ISO9001 standard, plus a large number of specific aviation requirements, necessary for the supply of aviation companies and/or companies who are subcontractors to aviation companies.\n\n",
     "items": {
       "1": "AS9100 Quality management system for new manufacturing.\n",
@@ -10,7 +10,7 @@
     }
   },
   "box2": {
-    "title": "RAAC helpt u\n",
+    "title": "RAAC helps you\n",
     "text": "You want a certified management system according to AS 9100/9110/9120\n\nRAAC assists you to set-up the system and can, if necessary, maintain it. For maintenance, you can also consider conducting internal audits and correcting the non-conformities if found. If there is limited knowledge of AS9100, Aviation and or of a quality system, we can supply various training in the company. By means of certain period of on-the-job training. For the AS9110 we can also provide Human Factor training.\n\nThere is always a solution for your organization available."
   },
   "seo": {

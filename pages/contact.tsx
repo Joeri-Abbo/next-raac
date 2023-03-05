@@ -6,7 +6,6 @@ import Main from "../sections/Main";
 import Map from "../components/Map";
 import BoxTitle from "../components/BoxTitle";
 import BoxText from "../components/BoxText";
-import Box from "../components/Box";
 import Panorama from "../components/Panorama";
 import {useTranslation} from "react-i18next";
 
@@ -44,7 +43,7 @@ export default function Contact() {
                                         Nederland
                                     </li>
                                     <li className={"mt-1"}>
-                                        Mob:&nbsp;
+                                        {t('mobile') ?? ""}:&nbsp;
                                         <a href={"tel:+3106-54772398"} className="underline">
                                             06-54772398
                                         </a>

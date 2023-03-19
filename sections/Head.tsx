@@ -12,7 +12,7 @@ const Head = (props: Props) => {
     return (
         <>
             <HeadNext>
-                <title>{props.title + " - " + "RAAC"}</title>
+                <title>{props.title}</title>
                 <meta name="description" content={props.description}/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <meta name="og:title" content={props.title}/>

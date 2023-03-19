@@ -56,7 +56,7 @@ export default function Home() {
                 ]}/>
                 <Main>
 
-                    <div className="text-center max-w-lg m-auto text-black dark:text-white">
+                    <div className="m-auto max-w-lg text-center text-black dark:text-white">
                         <p>
                             {t('intro.toptitle') ?? ""}
                         </p>

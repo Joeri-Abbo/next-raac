@@ -56,7 +56,7 @@ export default function Contact() {
                                 </ul>
                             </BoxText>
                         </div>
-                        <div className="rounded p-6 dark:bg-gray-900 ">
+                        <div className="rounded p-6 dark:bg-gray-900">
                             <ContactForm/>
                         </div>
                     </Col2>

@@ -17,11 +17,11 @@ const Dropdown = (props: Props) => {
     const {asPath} = useRouter()
     let activeClass = asPath == props.href ? " text-blue-500" : "";
     return (
-        <li className="dark:text-white text-black">
+        <li className="text-black dark:text-white">
             {/* START DESKTOP DROPDOWN*/}
-            <div className="relative group md:block hidden">
+            <div className="group relative hidden md:block">
                 <a href={props.href}
-                   className="flex flex-row items-center w-full px-4 py-4 md:w-auto md:inline md:mt-0 md:ml-4 focus:outline-none hover:text-blue-500 ">
+                   className="flex w-full flex-row items-center px-4 py-4 hover:text-blue-500 focus:outline-none md:mt-0 md:ml-4 md:inline md:w-auto">
                     <span className={activeClass + " flex items-center gap-1"}>
                         {t(props.title)}
                         <Chevron
@@ -29,9 +29,9 @@ const Dropdown = (props: Props) => {
                             role="button"/>
                     </span>
                 </a>
-                <div className="absolute z-10 hidden bg-grey-200 group-hover:block">
+                <div className="bg-grey-200 absolute z-10 hidden group-hover:block">
 
-                    <div className="px-4 -ml-4 pt-2 pb-4 bg-white dark:bg-black shadow-lg w-64 rounded-b-lg">
+                    <div className="-ml-4 w-64 rounded-b-lg bg-white px-4 pt-2 pb-4 shadow-lg dark:bg-black">
                         <ul>
                             {props.subitems && Object.keys(props.subitems).length > 0 && props.subitems.map((item: LinkItemType) => (
                                 <LinkItem key={item.title} href={item.href}>

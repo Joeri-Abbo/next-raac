@@ -3,7 +3,7 @@ type Props = {
 };
 const Box = (props: Props) => {
     return (
-        <div className="rounded py-10 px-6 dark:bg-gray-900 m-auto">
+        <div className="m-auto rounded py-10 px-6 dark:bg-gray-900">
             {props.children}
         </div>
     )

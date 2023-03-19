@@ -6,7 +6,7 @@ type Props = {
 const Slide = (props: Props) => {
     const id = useId()
     return (
-        <div key={id} className="relative w-full h-full">
+        <div key={id} className="relative h-full w-full">
             {props.children}
         </div>
     )

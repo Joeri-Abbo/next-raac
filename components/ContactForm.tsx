@@ -92,12 +92,12 @@ const ContactForm = () => {
                                     >
                                         <div className='field'>
                                             <label
-                                                className='block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300'>
+                                                className='mb-2 block text-sm font-medium text-gray-900 dark:text-gray-300'>
                                                 {t("label.name") ?? ""}
-                                                <span className='text-red-500 pl-1'>*</span>
+                                                <span className='pl-1 text-red-500'>*</span>
                                             </label>
                                             <input
-                                                className='shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light'
+                                                className='dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500'
                                                 type='text'
                                                 placeholder='Jon Doe'
                                                 name='name'
@@ -107,12 +107,12 @@ const ContactForm = () => {
                                         </div>
                                         <div className='field'>
                                             <label
-                                                className='block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300'>
+                                                className='mb-2 block text-sm font-medium text-gray-900 dark:text-gray-300'>
                                                 {t("label.email") ?? ""}
-                                                <span className='text-red-500 pl-1'>*</span>
+                                                <span className='pl-1 text-red-500'>*</span>
                                             </label>
                                             <input
-                                                className='shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light'
+                                                className='dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500'
                                                 type='email'
                                                 placeholder='john@example.com'
                                                 name='email'
@@ -122,12 +122,12 @@ const ContactForm = () => {
                                         </div>
                                         <div className='field'>
                                             <label
-                                                className='block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300'>
+                                                className='mb-2 block text-sm font-medium text-gray-900 dark:text-gray-300'>
                                                 {t("label.phone") ?? ""}
-                                                <span className='text-red-500 pl-1'>*</span>
+                                                <span className='pl-1 text-red-500'>*</span>
                                             </label>
                                             <input
-                                                className='shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light'
+                                                className='dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500'
                                                 type='tel'
                                                 placeholder='+31 6 12345678'
                                                 name='phone'
@@ -137,7 +137,7 @@ const ContactForm = () => {
                                         </div>
                                         <div className='field' style={{display: 'none'}}>
                                             <label
-                                                className='block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300'>
+                                                className='mb-2 block text-sm font-medium text-gray-900 dark:text-gray-300'>
                                                 {t("label.honeypot") ?? ""}
                                             </label>
                                             <input
@@ -154,14 +154,14 @@ const ContactForm = () => {
                                         </div>
                                         <div className='field'>
                                             <label
-                                                className='block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400'>
+                                                className='mb-2 block text-sm font-medium text-gray-900 dark:text-gray-400'>
                                                 {t("label.message") ?? ""}
-                                                <span className='text-red-500 pl-1'>*</span>
+                                                <span className='pl-1 text-red-500'>*</span>
                                             </label>
                                             <div className='control'>
                                                 <textarea
                                                     rows={6}
-                                                    className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                                    className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
                                                     name='message'
                                                     onChange={handleChange}
                                                     required
@@ -170,7 +170,7 @@ const ContactForm = () => {
                                         </div>
                                         <div className='field is-grouped'>
                                             <button
-                                                className='py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-700 sm:w-fit hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'
+                                                className='rounded-lg bg-blue-700 py-3 px-5 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 sm:w-fit'
                                                 type='submit'>
                                                 {t("submit") ?? ""}
                                             </button>

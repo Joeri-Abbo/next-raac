@@ -19,7 +19,7 @@ const BoxContent = (props: Props) => {
                 </p>
             </BoxText>
             {props.items ? (
-                <ul className="list-disc list-inside dark:text-white text-black mt-4">
+                <ul className="mt-4 list-inside list-disc text-black dark:text-white">
                     {props.items.map((item: string, index) => (
                         <li key={index}>{item}</li>
                     ))}

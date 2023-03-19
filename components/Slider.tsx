@@ -21,23 +21,21 @@ type Props = {
 const Slider = (props: Props) => {
     return (
         <>
-            <div className="
-            h-[500px]
-            ">
+            <div className="h-[500px]">
                 <Carousel className="border-none" slideInterval={5000}>
                     {props.slides.map((item, index) =>
                         <Slide key={index}>
                             <Image
-                                className=" border-none h-full w-full object-cover"
+                                className="h-full w-full border-none object-cover"
                                 src={item.image}
                                 alt="..."
                                 width={1920}
                                 height={1000}
                             />
-                            <div className="absolute top-20 left-20 z-10 drop-shadow">
+                            <div className="absolute top-20 left-20 z-10 bg-black px-2 py-4 text-lg opacity-70 drop-shadow">
                                 {item.title}
                             </div>
-                            <div className="absolute top-40 left-20 z-10 drop-shadow">
+                            <div className="absolute top-40 left-20 z-10 bg-black px-2 py-4 text-lg opacity-70 drop-shadow">
                                 {item.text}
                             </div>
 

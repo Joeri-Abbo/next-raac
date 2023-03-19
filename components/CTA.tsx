@@ -12,14 +12,14 @@ type Props = {
 }
 const CTA = (props: Props) => {
     return (
-        <div className="p-6 bg-white rounded dark:bg-gray-900 dark:text-white border-4 border-gray-300 rounded dark:border-gray-500 hover:scale-105 transition-all	">
+        <div className="rounded border-4 border-gray-300 bg-white p-6 transition-all hover:scale-105 dark:border-gray-500 dark:bg-gray-900 dark:text-white">
             <div>
                 <Image src={props.image} alt={props.title} width="1760" height="250" className="w-full"/>
-                <h3 className="bg-gray-700 py-3 mt-1 text-center text-xs">
+                <h3 className="mt-1 bg-gray-700 py-3 text-center text-xs">
                     {props.title}
                 </h3>
             </div>
-            <div className="py-3 text-black text-center dark:text-white h-32">
+            <div className="h-32 py-3 text-center text-black dark:text-white">
                 {props.children}
             </div>
             {props.button && (

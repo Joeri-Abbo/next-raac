@@ -14,24 +14,24 @@ const Header = () => {
 
     return (
         <header className="relative w-full">
-            <nav className="w-full bg-white dark:bg-black shadow fixed w-full z-50 -mt-16 ">
-                <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+            <nav className="fixed z-50 -mt-16 w-full bg-white shadow dark:bg-black">
+                <div className="mx-auto justify-between px-4 md:flex md:items-center md:px-8 lg:max-w-7xl">
                     <div>
-                        <div className="flex items-center justify-between py-3 md:py-5 md:block">
+                        <div className="flex items-center justify-between py-3 md:block md:py-5">
                             <Logo/>
                             <div className="md:hidden">
                                 <div className="flex">
                                     <button
-                                        className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                                        className="rounded-md p-2 text-gray-700 outline-none focus:border focus:border-gray-400"
                                         onClick={() => setNavbar(!navbar)}
                                     >
                                         {navbar ? (
-                                            <Bars className="w-6 h-6 fill-black dark:fill-white" role="button"/>
+                                            <Bars className="h-6 w-6 fill-black dark:fill-white" role="button"/>
                                         ) : (
-                                            <Bars className="w-6 h-6 fill-black dark:fill-white" role="button"/>
+                                            <Bars className="h-6 w-6 fill-black dark:fill-white" role="button"/>
                                         )}
                                     </button>
-                                    <div className="flex ml-1 gap-3 my-2">
+                                    <div className="my-2 ml-1 flex gap-3">
                                         <ThemeSwitcher/>
                                         <LanguageSwitcher/>
                                     </div>
@@ -85,8 +85,8 @@ const Header = () => {
                                         {t('navigation:contact')}
                                     </LinkItem>
                                 </ul>
-                                <div className="md:block hidden my-6">
-                                    <div className="flex ml-6 gap-3">
+                                <div className="my-6 hidden md:block">
+                                    <div className="ml-6 flex gap-3">
                                         <ThemeSwitcher/>
                                         <LanguageSwitcher/>
                                     </div>

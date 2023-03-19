@@ -4,7 +4,7 @@ import Copyright from "../components/Sections/Footer/Copyright";
 const Footer = () => {
 
     return (
-        <footer className="px-4 sm:px-6 py-6 relative">
+        <footer className="relative px-4 py-6 sm:px-6">
             <ToTop/>
             <Copyright/>
         </footer>

@@ -11,16 +11,16 @@ const Customer = (customer: CustomerType) => {
     return (
         <>
             <div
-                className=" rounded shadow-lg shadow-gray-200 dark:shadow-gray-900 bg-white dark:bg-gray-800 duration-300 hover:-translate-y-1 h-full">
+                className="h-full rounded bg-white shadow-lg shadow-gray-200 duration-300 hover:-translate-y-1 dark:bg-gray-800 dark:shadow-gray-900">
                 <figure>
                     <div className="p-4">
-                        <Image src={customer.image} className="rounded-t h-72 w-full object-contain" alt="Me" width="600"
+                        <Image src={customer.image} className="h-72 w-full rounded-t object-contain" alt="Me" width="600"
                                height="600"/>
                     </div>
 
                     <figcaption className="p-4">
                         <p
-                            className="text-lg mb-4 font-bold leading-relaxed text-gray-800 dark:text-gray-300">
+                            className="mb-4 text-lg font-bold leading-relaxed text-gray-800 dark:text-gray-300">
 
                             {t('customers:' + customer.title)}
                         </p>

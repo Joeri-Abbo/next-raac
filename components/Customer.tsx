@@ -11,13 +11,14 @@ const Customer = (customer: CustomerType) => {
 
     return (
         <>
-            <a href={customer.href} target="_blank"
-               className="h-full rounded bg-white shadow-lg shadow-gray-200 duration-300 hover:-translate-y-1 dark:bg-gray-800 dark:shadow-gray-900">
+            <a href={customer.href} target="_blank" rel={"noreferrer"}
+               className="rounded bg-white shadow-lg shadow-gray-200 duration-300 hover:-translate-y-1 dark:bg-gray-800 dark:shadow-gray-900 h-full flex flex-col justify-between border-4 border-gray-300
+               ">
                 <figure>
                     <div className="p-4">
-                        <Image src={customer.image} className="h-72 w-full rounded-t object-contain" alt="Me"
-                               width="600"
-                               height="600"/>
+                        <Image src={customer.image} className="h-36 w-full rounded-t object-contain" alt="Me"
+                               width="200"
+                               height="144"/>
                     </div>
 
                     <figcaption className="p-4">

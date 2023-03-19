@@ -32,17 +32,22 @@ const Slider = (props: Props) => {
                                 width={1920}
                                 height={1000}
                             />
-                            <div className="absolute top-20 left-20 z-10 bg-black px-2 py-4 text-lg opacity-70 drop-shadow">
-                                {item.title}
-                            </div>
-                            <div className="absolute top-40 left-20 z-10 bg-black px-2 py-4 text-lg opacity-70 drop-shadow">
-                                {item.text}
+                            <div
+                                className="max-w-90 absolute top-10 left-5 z-10 text-2xl opacity-70 drop-shadow md:top-20 md:left-20 md:max-w-80 overflow-hidden inline-block">
+                                <div className="mb-4 bg-black px-4 py-4 inline-block">
+                                    {item.title}
+                                </div>
+
+                                <div>
+
+                                    <div className="px-4 py-4 bg-black inline-block">
+                                        {item.text}
+                                    </div>
+                                </div>
                             </div>
 
-                            <PrimaryButton className="absolute bottom-20 left-20 z-10" href={item.button?.href ?? ""}>
-                                {item.button?.label ?? ""}
-                            </PrimaryButton>
-                            <PrimaryButton className="absolute bottom-20 left-20 z-10" href={item.button?.href ?? ""}>
+                            <PrimaryButton className="absolute bottom-20 z-10 left-5 md:left-20"
+                                           href={item.button?.href ?? ""}>
                                 {item.button?.label ?? ""}
                             </PrimaryButton>
                         </Slide>

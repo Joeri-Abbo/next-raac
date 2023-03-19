@@ -21,12 +21,13 @@ export default function Nadcap() {
                             title={t('box1.title') ?? ""}
                             text={t('box1.text') ?? ""}
                         />
-                        <BoxImage src={"/content/nadcap.png"} alt={"TEST"} width={1760} height={1760}/>
+                        <BoxImage src={"/content/nadcap.png"} alt={"Nadcap flow"} width={960} height={576}/>
                         <BoxContent
                             title={t('box2.title') ?? ""}
                             text={t('box2.text') ?? ""}
                         />
-                        <BoxImage src={"/content/nadcap-cer.png"} alt={"TEST"} width={1760} height={1760}/>
+                        <BoxImage src={"/content/nadcap-cer.png"} alt={"Nadcap certification"} width={864}
+                                  height={576}/>
                     </Col2>
                 </Main>
             </Layout>

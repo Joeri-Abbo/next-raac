@@ -14,11 +14,11 @@ export default function Index() {
         <>
             <Layout>
                 <Head title={t('seo.title') ?? ""} description={t('seo.description') ?? ""}/>
-                <Panorama image="/panorama/header-image-9.jpg" alt="panorama" title={t('title') ?? ""}/>
+                <Panorama image="/panorama/header-image-9.jpg" alt="panorama with people" title={t('title') ?? ""}/>
                 <Main>
                     <Col2>
                         <BoxContent title={t('box1.title') ?? ""} text={t('box1.text') ?? ""}/>
-                        <BoxImage src={"/content/management.png"} alt={"TEST"} width={1760} height={1760}/>
+                        <BoxImage src={"/content/management.png"} alt={"Handshake"} width={864} height={576}/>
                         <BoxContent title={t('box2.title') ?? ""} text={t('box2.text') ?? ""}/>
                     </Col2>
                 </Main>

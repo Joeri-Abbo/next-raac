@@ -15,7 +15,7 @@ export default function Audit() {
             <Layout>
 
                 <Head title={t('seo.title') ?? ""} description={t('seo.description') ?? ""}/>
-                <Panorama image="/panorama/header-image-5.jpg" alt="panorama" title={t('title') ?? ""}/>
+                <Panorama image="/panorama/header-image-5.jpg" alt="panorama constructor" title={t('title') ?? ""}/>
                 <Main>
                     <Col2>
                         <BoxContent
@@ -29,7 +29,7 @@ export default function Audit() {
                                 t('box1.items.5') ?? "",
                             ]}
                         />
-                        <BoxImage src={"/content/training.jpg"} alt={"TEST"} width={1760} height={1760}/>
+                        <BoxImage src={"/content/training.jpg"} alt={"Training"} width={864} height={864}/>
                     </Col2>
                 </Main>
             </Layout>

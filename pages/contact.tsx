@@ -16,7 +16,7 @@ export default function Contact() {
         <>
             <Layout>
                 <Head title={t('seo.title') ?? ""} description={t('seo.description') ?? ""}/>
-                <Panorama image="/panorama/header-image-10.jpg" alt="panorama"/>
+                <Panorama image="/panorama/header-image-10.jpg" alt="panorama get in contact"/>
                 <Main>
                     <Col2>
                         <div className="rounded p-6 dark:bg-gray-900">

@@ -15,11 +15,11 @@ export default function Audit() {
             <Layout>
 
                 <Head title={t('seo.title') ?? ""} description={t('seo.description') ?? ""}/>
-                <Panorama image="/panorama/header-image-4.jpg" alt="panorama" title={t('title') ?? ""}/>
+                <Panorama image="/panorama/header-image-4.jpg" alt="panorama checklist view" title={t('title') ?? ""}/>
                 <Main>
                     <Col2>
                         <BoxContent title={t('box1.title') ?? ""} text={t('box1.text') ?? ""}/>
-                        <BoxImage src={"/content/3.png"} alt={"TEST"} width={1760} height={1760}/>
+                        <BoxImage src={"/content/3.png"} alt={"Checklist"} width={864} height={576}/>
                     </Col2>
                 </Main>
             </Layout>

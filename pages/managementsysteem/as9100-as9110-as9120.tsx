@@ -15,7 +15,7 @@ export default function Iso9001() {
             <Layout>
 
                 <Head title={t('seo.title') ?? ""} description={t('seo.description') ?? ""}/>
-                <Panorama image="/panorama/header-image-6.jpg" alt="panorama" title={t('title') ?? ""}/>
+                <Panorama image="/panorama/header-image-6.jpg" alt="panorama with operator" title={t('title') ?? ""}/>
                 <Main>
                     <Col2>
                         <BoxContent
@@ -27,7 +27,8 @@ export default function Iso9001() {
                                 t('box1.items.3') ?? "",
                             ]}
                         />
-                        <BoxImage src={"/content/vliegtuig.png"} alt={"TEST"} width={1760} height={1760}/>
+                        <BoxImage src={"/content/vliegtuig.png"} alt={"plane under construction"} width={864}
+                                  height={576}/>
                         <BoxContent
                             title={t('box2.title') ?? ""}
                             text={t('box2.text') ?? ""}

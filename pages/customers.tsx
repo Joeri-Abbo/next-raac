@@ -13,7 +13,7 @@ export default function Customers() {
         <>
             <Layout>
                 <Head title={t('seo.title') ?? ""} description={t('seo.description') ?? ""}/>
-                <Panorama image="/panorama/header-image-9.jpg" alt="panorama"/>
+                <Panorama image="/panorama/header-image-9.jpg" alt="panorama with consumers"/>
                 <Title>
                     {t('title')}
                 </Title>

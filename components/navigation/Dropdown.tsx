@@ -15,7 +15,16 @@ type Props = {
 const Dropdown = (props: Props) => {
     const {t} = useTranslation('')
     const {asPath} = useRouter()
-    let activeClass = asPath == props.href ? " text-blue-500" : "";
+    let active = asPath == props.href;
+    if (!active && props.subitems) {
+        props.subitems.forEach((item) => {
+            if (asPath == item.href) {
+                active = true;
+            }
+        })
+    }
+    let activeClass = active ? " text-blue-500" : "";
+    let activeChevronClass = active ? activeClass + " rotate-90 fill-blue-500" : "";
     return (
         <li className="text-black dark:text-white">
             {/* START DESKTOP DROPDOWN*/}
@@ -25,7 +34,7 @@ const Dropdown = (props: Props) => {
                     <span className={activeClass + " flex items-center gap-1"}>
                         {t(props.title)}
                         <Chevron
-                            className={activeClass + "w-4 h-4 fill-black dark:fill-white group-hover:fill-blue-500  group-hover:rotate-90 transform-gpu"}
+                            className={activeChevronClass + " w-4 h-4 fill-black dark:fill-white group-hover:fill-blue-500  group-hover:rotate-90 transform-gpu"}
                             role="button"/>
                     </span>
                 </a>

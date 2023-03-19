@@ -4,17 +4,19 @@ import {useTranslation} from "react-i18next";
 type CustomerType = {
     image: string,
     title: string,
+    href: string,
 }
 const Customer = (customer: CustomerType) => {
-    const { t } = useTranslation('')
+    const {t} = useTranslation('')
 
     return (
         <>
-            <div
-                className="h-full rounded bg-white shadow-lg shadow-gray-200 duration-300 hover:-translate-y-1 dark:bg-gray-800 dark:shadow-gray-900">
+            <a href={customer.href} target="_blank"
+               className="h-full rounded bg-white shadow-lg shadow-gray-200 duration-300 hover:-translate-y-1 dark:bg-gray-800 dark:shadow-gray-900">
                 <figure>
                     <div className="p-4">
-                        <Image src={customer.image} className="h-72 w-full rounded-t object-contain" alt="Me" width="600"
+                        <Image src={customer.image} className="h-72 w-full rounded-t object-contain" alt="Me"
+                               width="600"
                                height="600"/>
                     </div>
 
@@ -26,7 +28,7 @@ const Customer = (customer: CustomerType) => {
                         </p>
                     </figcaption>
                 </figure>
-            </div>
+            </a>
         </>
     )
 }

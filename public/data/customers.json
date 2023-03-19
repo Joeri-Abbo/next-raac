@@ -1,46 +1,57 @@
 [
   {
     "image": "/clients/3dtec.png",
-    "title": "3dtec"
+    "title": "3dtec",
+    "href": "https://www.3dtec.nl/en/"
   },
   {
     "image": "/clients/bokwerk.png",
-    "title": "bokwerk"
+    "title": "bokwerk",
+    "href": "https://www.bokwerk.nl/"
   },
   {
     "image": "/clients/icamat.png",
-    "title": "icamat"
+    "title": "icamat",
+    "href": "https://icamat.nl/"
   },
   {
     "image": "/clients/kuster.png",
-    "title": "kuster"
+    "title": "kuster",
+    "href": "http://www.kustersexperts.nl/"
   },
   {
     "image": "/clients/lloyds.svg",
-    "title": "lloyds"
+    "title": "lloyds",
+    "href": "https://www.lrqa.com/en/"
   },
   {
     "image": "/clients/np.png",
-    "title": "np"
+    "title": "np",
+    "href": "https://proefstaven.nl/"
   },
   {
     "image": "/clients/np2.png",
-    "title": "np2"
+    "title": "np2",
+    "href": "https://nieuwstratenmetaalbewerking.nl/"
   },
   {
     "image": "/clients/senior.png",
-    "title": "senior"
+    "title": "senior",
+    "href": "https://www.linkedin.com/company/senior-aerospace-bosman/about/"
   },
   {
     "image": "/clients/standardaero.png",
-    "title": "standardaero"
+    "title": "standardaero",
+    "href": "https://standardaero.com/"
   },
   {
     "image": "/clients/bureau-veritas.svg",
-    "title": "bureau-veritas-belgium"
+    "title": "bureau-veritas-belgium",
+    "href": "https://benelux.bureauveritas.com/wie-we-zijn/bureau-veritas-belgie"
   },
   {
     "image": "/clients/bureau-veritas.svg",
-    "title": "bureau-veritas-france"
+    "title": "bureau-veritas-france",
+    "href": "https://www.bureauveritas.fr/"
   }
 ]

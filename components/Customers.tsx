@@ -5,6 +5,7 @@ import Customer from "./Customer";
 type CustomerType = {
     image: string,
     title: string,
+    href: string,
 }
 const Customers = () => {
     const [customers, setCustomers] = useState({});
@@ -28,7 +29,7 @@ const Customers = () => {
             {/*@ts-ignore*/}
             {customers && Object.keys(customers).length > 0 && customers.map((customer: CustomerType) => (
                 <div key={customer.title}>
-                    <Customer image={customer.image} title={customer.title}/>
+                    <Customer image={customer.image} title={customer.title} href={customer.href}/>
                 </div>
             ))}
         </Col4>

@@ -2,17 +2,10 @@ import LinkItem from "./LinkItem";
 import {useRouter} from 'next/router'
 import {useTranslation} from "react-i18next";
 import Chevron from "../../public/icons/chevron-down-solid.svg";
+import DropdownProps from "./DropdownProps";
+import DropdownLinkItemType from "./DropdownLinkItemType";
 
-type LinkItemType = {
-    title: string,
-    href: string,
-}
-type Props = {
-    title: any,
-    href: string,
-    subitems?: LinkItemType[]
-}
-const Dropdown = (props: Props) => {
+const Dropdown = (props: DropdownProps) => {
     const {t} = useTranslation('')
     const {asPath} = useRouter()
     let active = asPath == props.href;
@@ -42,7 +35,7 @@ const Dropdown = (props: Props) => {
 
                     <div className="-ml-4 w-64 rounded-b-lg bg-white px-4 pt-2 pb-4 shadow-lg dark:bg-black">
                         <ul>
-                            {props.subitems && Object.keys(props.subitems).length > 0 && props.subitems.map((item: LinkItemType) => (
+                            {props.subitems && Object.keys(props.subitems).length > 0 && props.subitems.map((item: DropdownLinkItemType) => (
                                 <LinkItem key={item.title} href={item.href}>
                                     {t(item.title)}
                                 </LinkItem>
@@ -61,7 +54,7 @@ const Dropdown = (props: Props) => {
                     </LinkItem>
                 </ul>
                 <ul className="ml-3">
-                    {props.subitems && Object.keys(props.subitems).length > 0 && props.subitems.map((item: LinkItemType) => (
+                    {props.subitems && Object.keys(props.subitems).length > 0 && props.subitems.map((item: DropdownLinkItemType) => (
                         <LinkItem key={item.title} href={item.href}>
                             {t(item.title)}
                         </LinkItem>

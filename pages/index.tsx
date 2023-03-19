@@ -55,17 +55,16 @@ export default function Home() {
                     }
                 ]}/>
                 <Main>
-
-                    <div className="m-auto max-w-lg text-center text-black dark:text-white">
-                        <p>
-                            {t('intro.toptitle') ?? ""}
-                        </p>
-                        <p>
+                    <Title>
+                        <div>
                             {t('intro.title') ?? ""}
-                        </p>
-                        <p>
+                        </div>
+                        <div>
                             {t('intro.subtitle') ?? ""}
-                        </p>
+                        </div>
+                    </Title>
+
+                    <div className="m-auto max-w-2xl text-black dark:text-white mb-8">
                         <p>
                             {t('intro.text') ?? ""}
                         </p>
@@ -85,6 +84,10 @@ export default function Home() {
                         </Col3>
                     </div>
 
+                    <Spacer/>
+                    <Spacer/>
+                    <Spacer/>
+                    <Spacer/>
                     <Title>
                         {t('cta.title')}
                     </Title>

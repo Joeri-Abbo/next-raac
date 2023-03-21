@@ -34,13 +34,13 @@ const Slider = (props: Props) => {
                             />
                             <div
                                 className="max-w-90 absolute top-10 left-5 z-10 text-2xl opacity-70 drop-shadow md:top-20 md:left-20 md:max-w-80 overflow-hidden inline-block">
-                                <div className="mb-4 bg-black px-4 py-4 inline-block">
+                                <div className="mb-4 bg-black px-4 py-4 inline-block whitespace-pre-wrap">
                                     {item.title}
                                 </div>
 
                                 <div>
 
-                                    <div className="px-4 py-4 bg-black inline-block">
+                                    <div className="px-4 py-4 bg-black inline-block whitespace-pre-wrap">
                                         {item.text}
                                     </div>
                                 </div>

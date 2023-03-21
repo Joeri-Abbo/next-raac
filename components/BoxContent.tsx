@@ -14,7 +14,7 @@ const BoxContent = (props: Props) => {
                 {props.title}
             </BoxTitle>
             <BoxText>
-                <p>
+                <p className="whitespace-pre-wrap">
                     {props.text}
                 </p>
             </BoxText>

@@ -3,7 +3,7 @@ type Props = {
 };
 const BoxText = (props: Props) => {
     return (
-        <div className="text-black dark:text-white">
+        <div className="text-black dark:text-white whitespace-pre-wrap">
             {props.children}
         </div>
     )

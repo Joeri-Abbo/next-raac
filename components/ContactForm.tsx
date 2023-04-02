@@ -168,9 +168,9 @@ const ContactForm = () => {
                                                 />
                                             </div>
                                         </div>
-                                        
-                                        <input type="text" name="honeypot" style="display: none;"> <!-- Optional -->
-                                            
+
+                                        <input type="text" name="honeypot" className={"hidden"}/>
+
                                         <div className='field is-grouped'>
                                             <button
                                                 className='rounded-lg bg-blue-700 py-3 px-5 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 sm:w-fit'

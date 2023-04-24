@@ -11,7 +11,7 @@
     "test:watch": "jest --watchAll"
   },
   "dependencies": {
-    "@next/font": "13.3.0",
+    "@next/font": "13.3.1",
     "@svgr/webpack": "^7.0.0",
     "@types/node": "18.15.13",
     "@types/react": "18.0.37",

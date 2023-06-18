@@ -40,7 +40,7 @@ const Slider = (props: Props) => {
 
                                 <div>
 
-                                    <div className="px-4 py-4 bg-black inline-block whitespace-pre-wrap">
+                                    <div className="px-4 py-4 bg-black inline-block whitespace-pre-wrap text-white">
                                         {item.text}
                                     </div>
                                 </div>

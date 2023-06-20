@@ -19,7 +19,7 @@
     "eslint-config-next": "^13.4.6",
     "flowbite": "^1.6.6",
     "flowbite-react": "^0.4.7",
-    "i18next": "^23.1.0",
+    "i18next": "^23.2.0",
     "next": "13.4.6",
     "next-themes": "^0.2.1",
     "react": "18.2.0",

@@ -15,7 +15,7 @@
     "@next/font": "14.0.3",
     "@svgr/webpack": "^8.0.1",
     "@types/node": "20.10.1",
-    "@types/react": "18.2.39",
+    "@types/react": "18.2.42",
     "@types/react-dom": "18.2.17",
     "eslint-config-next": "^14.0.3",
     "flowbite": "^2.1.1",

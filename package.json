@@ -11,7 +11,7 @@
     "test:watch": "jest --watchAll"
   },
   "dependencies": {
-    "@babel/eslint-parser": "^7.23.10",
+    "@babel/eslint-parser": "^7.24.1",
     "@next/font": "14.1.4",
     "@svgr/webpack": "^8.0.1",
     "@types/node": "20.12.5",

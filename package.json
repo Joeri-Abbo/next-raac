@@ -14,7 +14,7 @@
     "@babel/eslint-parser": "^7.24.1",
     "@next/font": "14.2.3",
     "@svgr/webpack": "^8.0.1",
-    "@types/node": "20.12.7",
+    "@types/node": "20.14.2",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
     "eslint-config-next": "^14.2.3",

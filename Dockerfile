@@ -1,4 +1,4 @@
-FROM node:22.5-alpine
+FROM node:22.6-alpine
 
 RUN mkdir -p /home/app/ && chown -R node:node /home/app
 WORKDIR /home/app

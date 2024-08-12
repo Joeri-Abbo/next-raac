@@ -41,6 +41,6 @@
     "jest-environment-jsdom": "^29.7.0",
     "postcss": "^8.4.41",
     "tailwindcss": "^3.4.9",
-    "ts-jest": "^29.2.3"
+    "ts-jest": "^29.2.4"
   }
 }

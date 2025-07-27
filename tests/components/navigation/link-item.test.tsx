@@ -1,6 +1,6 @@
 import {render} from "@testing-library/react";
 import LinkItem from "../../../components/navigation/LinkItem";
-import "@testing-library/jest-dom/extend-expect";
+import "@testing-library/jest-dom";
 
 jest.mock("next/router", () => ({
     useRouter: jest.fn(() => ({asPath: "/home"})),

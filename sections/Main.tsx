@@ -1,3 +1,4 @@
+import { JSX } from 'react';
 import MainWrapper from "../components/Sections/Layout/Main";
 
 type Props = {

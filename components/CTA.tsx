@@ -1,3 +1,4 @@
+import { JSX } from 'react';
 import Image from "next/image";
 import PrimaryButton from "../components/Button/Primary";
 

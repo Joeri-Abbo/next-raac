@@ -1,3 +1,4 @@
+import { JSX } from 'react';
 import {Button} from "flowbite-react";
 
 type Props = {

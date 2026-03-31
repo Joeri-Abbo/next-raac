@@ -1,4 +1,4 @@
-import {useId} from "react";
+import {useId, JSX} from "react";
 
 type Props = {
     children: JSX.Element[] | JSX.Element | string

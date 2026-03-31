@@ -1,3 +1,4 @@
+import { JSX } from 'react';
 import BoxTitle from "./BoxTitle";
 import Box from "./Box";
 import BoxText from "./BoxText";

@@ -1,3 +1,4 @@
+import { JSX } from 'react';
 type Props = {
     children: JSX.Element[] | JSX.Element | string
 };

@@ -2,6 +2,13 @@
 const nextConfig = {
     output: 'export',
     poweredByHeader: false,
+    transpilePackages: [
+        'flowbite-react',
+        'debounce',
+        'deepmerge-ts',
+        'oxc-parser',
+        'package-manager-detector',
+    ],
     webpack(config) {
         config.module.rules.push({
             test: /\.svg$/,

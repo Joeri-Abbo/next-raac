@@ -4,7 +4,7 @@ type Props = {
 };
 const Col3 = (props: Props) => {
     return (
-        <div className="mt-4 grid grid-cols-1 flex-col-reverse items-stretch gap-4 lg:grid-cols-3">
+        <div className="grid grid-cols-1 items-stretch gap-6 md:grid-cols-2 lg:grid-cols-3">
             {props.children}
         </div>
     )

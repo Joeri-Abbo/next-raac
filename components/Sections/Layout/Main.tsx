@@ -4,11 +4,9 @@ type Props = {
 };
 const Main = (props: Props) => {
     return (
-        <div className="mx-auto mb-8 flex max-w-6xl flex-col">
-            <main className="container mx-auto mt-6 flex-grow px-4 sm:px-6">
-                {props.children}
-            </main>
-        </div>
+        <main className="mx-auto w-full max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+            {props.children}
+        </main>
     )
 }
 export default Main;

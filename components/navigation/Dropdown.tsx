@@ -23,18 +23,15 @@ const Dropdown = (props: DropdownProps) => {
             {/* START DESKTOP DROPDOWN*/}
             <div className="group relative hidden md:block">
                 <a href={props.href}
-                   className="flex w-full flex-row items-center px-4 py-4 hover:text-blue-500 focus:outline-none md:mt-0 md:ml-4 md:inline md:w-auto">
-                    <span className={activeClass + " flex items-center gap-1"}>
-                        {t(props.title)}
-                        <Chevron
-                            className={activeChevronClass + " w-4 h-4 fill-black dark:fill-white group-hover:fill-blue-500  group-hover:rotate-90 transform-gpu"}
-                            role="button"/>
-                    </span>
+                   className={activeClass + " flex items-center gap-1 hover:text-blue-500 focus:outline-none"}>
+                    {t(props.title)}
+                    <Chevron
+                        className={activeChevronClass + " w-4 h-4 fill-black dark:fill-white group-hover:fill-blue-500 group-hover:rotate-90 transform-gpu"}
+                        role="button"/>
                 </a>
-                <div className="bg-grey-200 absolute z-10 hidden group-hover:block">
-
-                    <div className="-ml-4 w-64 rounded-b-lg bg-white px-4 pt-2 pb-4 shadow-lg dark:bg-black">
-                        <ul>
+                <div className="absolute left-0 top-full z-10 hidden pt-2 group-hover:block">
+                    <div className="w-64 rounded-lg bg-white px-4 pt-2 pb-4 shadow-lg dark:bg-black">
+                        <ul className="flex flex-col gap-2">
                             {props.subitems && Object.keys(props.subitems).length > 0 && props.subitems.map((item: DropdownLinkItemType) => (
                                 <LinkItem key={item.title} href={item.href}>
                                     {t(item.title)}

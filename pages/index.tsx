@@ -56,42 +56,32 @@ export default function Home() {
                 ]}/>
                 <Main>
                     <Title>
-                        <div>
-                            {t('intro.title') ?? ""}
-                        </div>
-                        <div>
-                            {t('intro.subtitle') ?? ""}
-                        </div>
+                        {t('intro.title') ?? ""}
                     </Title>
+                    <p className="mx-auto -mt-4 mb-8 max-w-3xl text-center text-lg font-medium text-blue-600 dark:text-blue-400 sm:text-xl">
+                        {t('intro.subtitle') ?? ""}
+                    </p>
+                    <p className="mx-auto mb-12 max-w-3xl text-center text-base leading-relaxed text-gray-700 dark:text-gray-300">
+                        {t('intro.text') ?? ""}
+                    </p>
 
-                    <div className="m-auto max-w-2xl text-black dark:text-white mb-8">
-                        <p>
-                            {t('intro.text') ?? ""}
-                        </p>
-                    </div>
-
-                    <div className="container mx-auto px-6">
-                        <Col3>
-                            <PrimaryButton href={"interim-management/root-cause-analyse"}>
-                                {t('buttons.1') ?? ""}
-                            </PrimaryButton>
-                            <PrimaryButton href={"contact"}>
-                                {t('buttons.2') ?? ""}
-                            </PrimaryButton>
-                            <PrimaryButton href={"interim-management"}>
-                                {t('buttons.3') ?? ""}
-                            </PrimaryButton>
-                        </Col3>
-                    </div>
+                    <Col3>
+                        <PrimaryButton href={"interim-management/root-cause-analyse"}>
+                            {t('buttons.1') ?? ""}
+                        </PrimaryButton>
+                        <PrimaryButton href={"contact"}>
+                            {t('buttons.2') ?? ""}
+                        </PrimaryButton>
+                        <PrimaryButton href={"interim-management"}>
+                            {t('buttons.3') ?? ""}
+                        </PrimaryButton>
+                    </Col3>
 
                     <Spacer/>
-                    <Spacer/>
-                    <Spacer/>
-                    <Spacer/>
+
                     <Title>
                         {t('cta.title')}
                     </Title>
-                    <Spacer/>
                     <Col3>
                         <CTA image={"/content/1.png"} title={t('cta.1.title') ?? ""} button={
                             {

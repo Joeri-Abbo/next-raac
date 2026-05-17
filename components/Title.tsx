@@ -5,13 +5,12 @@ type Props = {
 const Title = (props: Props) => {
 
     return (
-        <>
-            <div
-                className="my-5 mb-4 w-full text-center text-4xl font-extrabold tracking-tight text-black text-gray-900 dark:text-white whitespace-pre-wrap">
+        <div className="mb-8 text-center">
+            <div className="mb-4 w-full text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white whitespace-pre-wrap sm:text-4xl">
                 {props.children}
             </div>
-            <div className="mx-auto mb-4 w-3/5 border-b-2 border-gray-300"/>
-        </>
+            <div className="mx-auto h-1 w-24 rounded bg-blue-500"/>
+        </div>
     )
 }
 export default Title;

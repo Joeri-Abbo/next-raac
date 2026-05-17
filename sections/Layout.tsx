@@ -7,13 +7,13 @@ type Props = {
 };
 const Layout = (props: Props) => {
     return (
-        <>
-            <div className="bg-white pt-8 dark:bg-black">
-                <Header/>
+        <div className="flex min-h-screen flex-col bg-white pt-16 dark:bg-black md:pt-20">
+            <Header/>
+            <div className="flex-1">
                 {props.children}
-                <Footer/>
             </div>
-        </>
+            <Footer/>
+        </div>
     );
 };
 

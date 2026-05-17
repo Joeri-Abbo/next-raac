@@ -3,8 +3,20 @@ import type {AppProps} from 'next/app'
 import {ThemeProvider} from "next-themes";
 import i18n from 'i18next';
 import {initReactI18next} from 'react-i18next';
+import {useEffect} from 'react';
 
 export default function App({Component, pageProps}: AppProps) {
+    useEffect(() => {
+        try {
+            const saved = window.localStorage.getItem('lang');
+            if (saved && saved !== i18n.language) {
+                i18n.changeLanguage(saved);
+            }
+        } catch {
+            // localStorage unavailable — fall back to default
+        }
+    }, []);
+
     return (
         <ThemeProvider enableSystem={true} attribute="class">
             <Component {...pageProps} />

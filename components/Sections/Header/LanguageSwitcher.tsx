@@ -1,42 +1,35 @@
-import {useState, useEffect} from 'react';
-import {useTranslation, withTranslation} from 'react-i18next';
+import {useTranslation} from 'react-i18next';
 import FlagNl from "../../../public/flags/nl.svg"
 import FlagEn from "../../../public/flags/en.svg"
 
+const STORAGE_KEY = 'lang';
+
 function LanguageSwitcher() {
     const {i18n} = useTranslation();
-    const [language, setLanguage] = useState(i18n.language);
 
-    useEffect(() => {
-        setLanguage(language);
-        i18n.changeLanguage(language);
-    }, [language, i18n]);
-
-    const renderLangChanger = () => {
-
-        const classNames = "w-6 h-6 hover:scale-125 transform-gpu"
-
-        if (language === "nl") {
-            return (
-                <FlagEn className={classNames} role="button" onClick={() => onToggleLanguageClick("en")}/>
-            )
-        } else {
-            return (
-                <FlagNl className={classNames} role="button" onClick={() => onToggleLanguageClick("nl")}/>
-            )
+    const onToggleLanguageClick = (newLocale: string) => {
+        i18n.changeLanguage(newLocale);
+        if (typeof window !== 'undefined') {
+            try {
+                window.localStorage.setItem(STORAGE_KEY, newLocale);
+            } catch {
+                // localStorage unavailable (private mode, quota, etc.) — ignore
+            }
         }
     };
 
-    const onToggleLanguageClick = (newLocale: string) => {
-        i18n.changeLanguage(newLocale).then(r => setLanguage(newLocale));
-        setLanguage(newLocale);
-    };
+    const classNames = "w-6 h-6 hover:scale-125 transform-gpu";
+    const isDutch = i18n.language === "nl";
 
     return (
         <div>
-            {renderLangChanger()}
+            {isDutch ? (
+                <FlagEn className={classNames} role="button" onClick={() => onToggleLanguageClick("en")}/>
+            ) : (
+                <FlagNl className={classNames} role="button" onClick={() => onToggleLanguageClick("nl")}/>
+            )}
         </div>
     );
 }
 
-export default withTranslation()(LanguageSwitcher);
+export default LanguageSwitcher;

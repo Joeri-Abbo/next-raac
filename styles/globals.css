@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "flowbite-react/plugin/tailwindcss";
 
 @source "../pages/**/*.{js,ts,jsx,tsx}";
 @source "../components/**/*.{js,ts,jsx,tsx}";
